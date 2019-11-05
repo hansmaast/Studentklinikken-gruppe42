@@ -6,7 +6,6 @@
         <router-link to="/register">Register</router-link>
         <router-link to="/userData">Users</router-link>
         <router-link to="/contact">Contact</router-link>
-        <router-link to="/components">Components</router-link>
     </nav>
 </template>
 <script>

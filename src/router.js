@@ -33,18 +33,6 @@ const router = new Router({
             component: () => import('./views/Register.vue'),
         },
         {
-            path: '/components',
-            name: 'components',
-            component: () => import('./views/_components/_Components.vue'),
-            children: [
-                {
-                    path: 'forms',
-                    component: () => import('./views/_components/_Forms.vue')
-                }
-            ],
-            meta: {}
-        },
-        {
             path: '/userData',
             name: 'users',
             component: () => import('./views/Users.vue'),

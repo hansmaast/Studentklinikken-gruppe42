@@ -1,7 +1,7 @@
 // This contains the components html && child components
 <template>
     <div id="app">
-        <HeaderWithSlideOutNav title="Vue.js"></HeaderWithSlideOutNav>
+        <HeaderWithSlideOutNav title="Studentklinikken."></HeaderWithSlideOutNav>
         <router-view class="routerView"/>
     </div>
 </template>
