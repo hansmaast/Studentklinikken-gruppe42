@@ -1,6 +1,6 @@
-# getting-to-know-vue
+# Studentklinikken
 
-Following this great article: https://medium.com/js-dojo/getting-started-with-vuejs-for-web-and-native-285dc64f0f0d
+Eksamensoppgave for faget grensesnittgesign..
 
 ## Project setup
 ```
