@@ -1,6 +1,8 @@
 <template>
     <div class="mainContainer">
-        <div class="imgContainer"></div>
+        <div class="imgContainer">
+            <img src="../../public/img/doctor.svg" alt="">
+        </div>
         <h2>Studentklinikken</h2>
         <router-link to="login">
             <st-big-btn label="LOGG INN"/>
@@ -50,10 +52,13 @@
     }
 
     .imgContainer {
-        border: 1px solid;
         max-width: 400px;
         max-height: 400px;
         width: 75vw;
         height: 75vw;
+    }
+    .imgContainer > img {
+        width: 100%;
+        height: 100%;
     }
 </style>
