@@ -1,5 +1,5 @@
 <template>
-    <div class="mainConatiner">
+    <div class="mainContainer">
         <div class="imgContainer"></div>
         <h2>Studentklinikken</h2>
         <st-big-btn label="LOGG INN"/>
@@ -36,9 +36,13 @@
 </script>
 
 <style>
-    .mainConatiner {
-        height: 100%;
-        width: 100%;
+    .mainContainer {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .imgContainer {
@@ -47,18 +51,11 @@
         max-height: 400px;
         width: 75vw;
         height: 75vw;
-        margin: 77px auto 0 auto;
     }
 
     p {
         margin: 0px auto;
         max-width: 1000px;
         font-size: 14px;
-    }
-    .absolute-center {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
 </style>
