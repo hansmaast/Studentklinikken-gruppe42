@@ -46,7 +46,11 @@
         width: 100vw;
     }
 
-    input,
+
+    p {
+        font-size: 14px;
+    }
+
     select,
     textarea {
         outline: none;
