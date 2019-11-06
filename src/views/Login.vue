@@ -1,34 +1,25 @@
 <template>
     <div class="mainContainer">
-        <h1>Logg inn</h1>
-        <st-input-icon
-            label="E-postadresse"
-            placeholder="example@mail.com"
-            imgSrc="#"
-        />
-        <st-input-icon
-                label="Passord"
-                placeholder="**********"
-                imgSrc="#"
-        />
-        <p>Glemt passord?</p>
-        <div class="imgContainer"></div>
+        <st-login/>
+        <div class="imgContainer">
+            <img src="../../public/img/fluidPlants.svg" alt="">
+        </div>
     </div>
 </template>
 
 <script>
-    import StInputIcon from "../components/InputFields/StInputIcon";
+    import StLogin from "../components/Forms/StLogin";
 
     export default {
         name: 'Login',
-        components: {StInputIcon},
+        components: {StLogin},
         data() {
             return {}
         }
     }
 </script>
 
-<style>
+<style scoped>
     .mainContainer {
         height: 100vh;
         width: 100vw;
@@ -39,16 +30,14 @@
     }
 
     .imgContainer {
-        border: 1px solid;
         max-width: 400px;
         max-height: 400px;
         width: 75vw;
         height: 75vw;
     }
 
-    p {
-        margin: 0px auto;
-        max-width: 1000px;
-        font-size: 14px;
+    .imgContainer > img {
+        width: 100%;
+        height: 100%;
     }
 </style>
