@@ -1,10 +1,10 @@
 <template>
     <header>
         <router-link to="/" class="logoLink">
-            <img alt="Vue logo" src="../../../assets/logo.png">
+            <img alt="logo" src="#">
         </router-link>
         <h1>{{title}}</h1>
-        <button @click="toggleNav">Menu</button>
+        <button @click="toggleNav">| | |</button>
         <NavLinks />
     </header>
 </template>
@@ -30,6 +30,7 @@
         position: fixed;
         display: flex;
         flex-direction: row;
+        align-items: center;
         height: 70px;
         background-color: white;
         border-bottom: 1px solid #2c3e50;
@@ -42,9 +43,14 @@
     }
 
     button {
-        max-width: 150px;
+        padding: 0;
+        width: 40px;
+        height: 50px;
         right: 0;
         margin-right: 100px;
+        border: none;
+        border-radius: 5px;
+        transform: rotate(90deg);
     }
 
     h1 {

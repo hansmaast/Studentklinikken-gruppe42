@@ -1,7 +1,6 @@
 // This contains the components html && child components
 <template>
     <div id="app">
-        <HeaderWithSlideOutNav title="Studentklinikken."></HeaderWithSlideOutNav>
         <router-view class="routerView"/>
     </div>
 </template>
@@ -32,7 +31,7 @@
         margin: 0;
     }
     #app {
-        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        font-family: 'Roboto', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
@@ -43,14 +42,13 @@
     }
 
     .routerView {
-        margin-top: 70px;
-        padding-top: 30px;
+        height: 100vh;
+        width: 100vw;
     }
 
     input,
     select,
-    textarea,
-    button {
+    textarea {
         outline: none;
         margin: 5px 10px;
         font-size: 1em;
