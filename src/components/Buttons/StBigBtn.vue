@@ -14,7 +14,8 @@
 <style scoped>
     button {
         position: relative;
-        width: 308px;
+        width: 90vw;
+        max-width: 308px;
         font-size: 18px;
         background-color: #77999E;
         border-radius: 50px;margin-bottom: 15px;
