@@ -2,8 +2,12 @@
     <div class="mainContainer">
         <div class="imgContainer"></div>
         <h2>Studentklinikken</h2>
-        <st-big-btn label="LOGG INN"/>
-        <st-big-btn label="REGISTRER DEG"/>
+        <router-link to="login">
+            <st-big-btn label="LOGG INN"/>
+        </router-link>
+        <router-link to="register">
+            <st-big-btn label="REGISTRER DEG"/>
+        </router-link>
         <p>Fortsett uten bruker</p>
     </div>
 </template>
@@ -35,7 +39,7 @@
     }
 </script>
 
-<style>
+<style scoped>
     .mainContainer {
         height: 100vh;
         width: 100vw;
@@ -51,11 +55,5 @@
         max-height: 400px;
         width: 75vw;
         height: 75vw;
-    }
-
-    p {
-        margin: 0px auto;
-        max-width: 1000px;
-        font-size: 14px;
     }
 </style>
