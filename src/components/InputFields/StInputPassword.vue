@@ -49,6 +49,7 @@
         grid-area: c;
         width: 230px;
         margin-left: 5px;
+        border: none;
         outline: none;
         box-shadow: none;
         text-align: left;
