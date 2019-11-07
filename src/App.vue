@@ -27,6 +27,7 @@
 <!-- This contains the components optional CSS -->
 <!-- If "scoped" is not applied, the style will also affect the child components -->
 <style>
+
     body {
         margin: 0;
     }
