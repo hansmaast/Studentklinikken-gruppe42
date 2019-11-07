@@ -51,6 +51,7 @@
         margin-left: 5px;
         outline: none;
         box-shadow: none;
+        border: none;
         text-align: left;
     }
 
