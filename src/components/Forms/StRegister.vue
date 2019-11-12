@@ -27,9 +27,11 @@
             <router-link to="login">
                 <p>Allerede bruker?</p>
             </router-link>
-            <st-small-btn
-                    label="FULLFØR"
-            />
+            <router-link to="home">
+                <st-small-btn
+                        label="FULLFØR"
+                />
+            </router-link>
         </div>
     </div>
 </template>
@@ -50,6 +52,7 @@
         text-decoration: none;
         color: inherit;
     }
+
     .loginContainer {
         display: grid;
         grid-template-areas: "a" "b" "b" "b" "c";

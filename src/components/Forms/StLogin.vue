@@ -15,9 +15,11 @@
         </div>
         <div class="loginFoot">
             <p>Glemt passord?</p>
-            <st-small-btn
-                    label="LOGG INN"
-            />
+            <router-link to="home">
+                <st-small-btn
+                        label="LOGG INN"
+                />
+            </router-link>
         </div>
     </div>
 </template>
@@ -34,20 +36,18 @@
 <style scoped>
     .loginContainer {
         display: grid;
-        grid-template-areas:
-                            "a"
-                            "b"
-                            "b"
-                            "b"
-                            "c";
+        grid-template-areas: "a" "b" "b" "b" "c";
         margin-bottom: 15px;
     }
+
     h1 {
         grid-area: a;
     }
+
     .fields {
         grid-area: b;
     }
+
     .loginFoot {
         grid-area: c;
         display: flex;

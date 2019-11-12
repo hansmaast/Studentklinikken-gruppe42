@@ -13,14 +13,9 @@ const router = new Router({
             component: StartPage
         },
         {
-            path: '/about',
-            name: 'about',
-            component: () => import('./views/About.vue')
-        },
-        {
-            path: '/contact',
-            name: 'contact',
-            component: () => import('./views/Contact.vue')
+            path: '/home',
+            name: 'home',
+            component: () => import('./views/Home.vue')
         },
         {
             path: '/login',
