@@ -7,14 +7,12 @@
 
 <!-- This contains the components Vue instance information && JS -->
 <script>
-    import HeaderWithSlideOutNav from "./components/Layout/Header/Header";
 
     // Tells the component what to export
     export default {
         name: 'app',
         components: {
             // Always declare the component you want to render
-            HeaderWithSlideOutNav,
         },
         data() {
             // This is kind of the same as props? Hmm... Its sort of like a variable you can send to the components props?
