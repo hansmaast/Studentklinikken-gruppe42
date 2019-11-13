@@ -1,59 +1,19 @@
 <template>
     <div class="mainContainer">
-        <h1>Studentklinikken</h1>
-        <p>Hei! Vi tilbyr følgende:</p>
-        <div class="treatments">
-            <st-treatment-field treatment="Akupunktur"/>
-            <st-treatment-field treatment="Kostholdsveiledning"/>
-            <st-treatment-field treatment="Osteopati"/>
-            <st-treatment-field treatment="Fysiologisk testlab"/>
-        </div>
+        <h1>Kostholdsveiledning</h1>
+        <p>Kostveiledningen gjøres av avgangsstudenter som tar en bachelorgrad i ernæring
+             under veiledning av autoriserte kliniske ernæringsfysiologer.</p>
         <st-medium-btn label="BESTILL TIME"/>
-        <st-quote-field/>
         <div class="imgContainer">
-            <img src="../../public/img/Vect.png" alt="">
+            <img src="../../public/img/Kosthold.svg" alt="">
         </div>
-        <h4>BEHANDLINGSTILBUD</h4>
-        <p class="infoTxt">Vi behandler akutte og langvarige plager / ubehag, men kan også hjelpe til med forebyggende
-            tiltak.
-            Du kan forvente en individuell samtale, undersøkelse, behandling og råd rettet mot dine behov. <br><br>
-            Studentene har selv ansvar for konsultasjonene, men har alltid en erfaren veileder tilgjengelig. <br><br>
-            Du trenger ikke henvisning fra lege.
+        <h4>KOSTHOLDSVEILEDNING</h4>
+        <p class="infoTxt">Veiledning passer ypperlig for deg som ønsker å forebygge sykdom,
+                            gå ned eller opp i vekt, spise optimalt med tanke på trening og prestasjon,
+                            har allergier eller intoleranse som krever tilpasning av kosten eller ønsker å ha et
+                            generelt sunt kosthold.
         </p>
-        <h4>PRISER</h4>
-        <ul>
-            <li>
-                <span>Første behandling ordinær 300,- / rabatt* 150,-</span>
-            </li>
-            <li>
-                <span>Oppfølgende behandling ordinær 220,- / rabatt*100,-</span>
-            </li>
-            <li>
-                <span>*Rabatten gjelder: Honnør over 60 år, ungdom under 18 år, studenter og HK ansatte</span>
-            </li>
-            <li>
-                <span>Kostveiledning er gratis</span>
-            </li>
-            <li>
-                <span>Sommerklinikken for akupunktur og osteopati har egen priser</span>
-            </li>
-        </ul>
-        <div class="imgContainer">
-            <img src="../../public/img/DoctorLogo2.svg" alt="">
-        </div>
-        <h4>ADRESSE</h4>
-        <p class="infoTxt">
-            Prinsens gate 9, 0153 Oslo. Henvend deg alltid i Besøksresepsjonen før konsultasjonen. <br><br>
-            Klinikken med venterom ligger i 3. etg. i samme bygg. Vi har heis.
-        </p>
-        <h4>HVILKEN BEHANDLING PASSER BEST FOR DEG?</h4>
-        <p class="infoTxt">Usikker på hvilken behandling som passer best for deg?
-            Ta kontakt med oss så hjelper vi deg!
-        </p>
-        <st-contact-info/>
-        <div class="imgContainer">
-            <img src="../../public/img/MapPerson.svg" alt="">
-        </div>
+        <p>Førstegangs konsultasjon 60min / Oppfølgende konsultasjon 45min</p>
         <st-medium-btn label="BESTILL TIME" />
     </div>
 </template>
@@ -110,7 +70,6 @@
     .infoTxt,
     li {
         max-width: 400px;
-        max-height: 400px;
         width: 85vw;
         font-size: 14pt;
         text-align: left;
