@@ -1,77 +1,82 @@
 <template>
     <div class="mainContainer">
-        <h1>Studentklinikken</h1>
-        <p>Hei! Vi tilbyr følgende:</p>
-        <div class="treatments">
-            <st-treatment-field treatment="Akupunktur"/>
-            <st-treatment-field treatment="Kostholdsveiledning"/>
-            <st-treatment-field treatment="Osteopati"/>
-            <st-treatment-field treatment="Fysiologisk testlab"/>
-        </div>
+        <h1>Fysiologisk <br> testlab</h1>
+        <p class="infoTxt bold center">
+            Høyskolen Kristanias fysiologiske testlaboratorium er et topp moderne laboratorium som brukes til
+            undervisning og forskning.
+            <br><br>
+            Også våre studenter, spesielt de på Bachelor i Fysisk aktivitet og ernæring, har mye undervisning i
+            laboratoriet
+        </p>
         <st-medium-btn label="BESTILL TIME"/>
-        <st-quote-field/>
         <div class="imgContainer">
-            <img src="../../public/img/Vect.png" alt="">
+            <img src="../../public/img/Testlab.svg" alt="">
         </div>
-        <h4>BEHANDLINGSTILBUD</h4>
-        <p class="infoTxt">Vi behandler akutte og langvarige plager / ubehag, men kan også hjelpe til med forebyggende
-            tiltak.
-            Du kan forvente en individuell samtale, undersøkelse, behandling og råd rettet mot dine behov. <br><br>
-            Studentene har selv ansvar for konsultasjonene, men har alltid en erfaren veileder tilgjengelig. <br><br>
-            Du trenger ikke henvisning fra lege.
+        <h4>FYSIOLOGISK TESTLAB</h4>
+        <p class="infoTxt">Testing av egen helse er samtidig både motiverende og gir verdifull informasjon for mange
+            andre. Derfor tilbyr vi tester til deg som ønsker å teste din fysiske tilstand og prestasjonsevne.
+            <br><br>
+            På testlaboratoriet finner vi ut hva status er nå, måler fremgang og gir deg videre råd og tilpasning av
+            mosjon og trening.
         </p>
-        <h4>PRISER</h4>
-        <ul>
-            <li>
-                <span>Første behandling ordinær 300,- / rabatt* 150,-</span>
-            </li>
-            <li>
-                <span>Oppfølgende behandling ordinær 220,- / rabatt*100,-</span>
-            </li>
-            <li>
-                <span>*Rabatten gjelder: Honnør over 60 år, ungdom under 18 år, studenter og HK ansatte</span>
-            </li>
-            <li>
-                <span>Kostveiledning er gratis</span>
-            </li>
-            <li>
-                <span>Sommerklinikken for akupunktur og osteopati har egen priser</span>
-            </li>
-        </ul>
-        <div class="imgContainer">
-            <img src="../../public/img/DoctorLogo2.svg" alt="">
-        </div>
-        <h4>ADRESSE</h4>
+        <h4>BASISTESTEN FOR UTHOLDENHETSUTØVERE</h4>
         <p class="infoTxt">
-            Prinsens gate 9, 0153 Oslo. Henvend deg alltid i Besøksresepsjonen før konsultasjonen. <br><br>
-            Klinikken med venterom ligger i 3. etg. i samme bygg. Vi har heis.
+            Testen forteller hvor stor kroppsmotor man har – også kalt oksygenopptak. Det maksimale
+            oksygenopptaket er med på å bestemme din aerobe kapasitet, og brukes til å vurdere om treningen gir
+            resultater.
         </p>
-        <h4>HVILKEN BEHANDLING PASSER BEST FOR DEG?</h4>
-        <p class="infoTxt">Usikker på hvilken behandling som passer best for deg?
-            Ta kontakt med oss så hjelper vi deg!
+        <h4>
+            ARBEIDS-EKG, INKLUDERT BLODTRYKKSMÅLING
+        </h4>
+        <p class="infoTxt">
+            Et arbeids-EKG brukes først og fremst til å fremskaffe kunnskap om det foreligger tegn til hjerte- og
+            karsykdom under fysiske anstrengelser.
+            <br><br>
+            Arbeids-EKGen utføres på sykkel under økende belastning, og sammen med måling av blodtrykk får testpersonen
+            festet elektroder på kroppen som måler hjerteaktiviteten under testen.
+            <br><br>
+            Etter avsluttet test gjennomgås testresultatene med lege/testpersonell som igangsetter tiltak, hvis behov.
         </p>
-        <st-contact-info/>
         <div class="imgContainer">
-            <img src="../../public/img/MapPerson.svg" alt="">
+            <img src="../../public/img/2Testlab.svg" alt="">
         </div>
-        <st-medium-btn label="BESTILL TIME" />
+        <h4>SPIROMETRI - LUNGEFUNKSJONSTEST</h4>
+        <p class="infoTxt">
+            Spirometri er en lungefunksjonsprøve. Spirometri måler to forskjellige egenskaper ved lungene; mengde
+            (volum) luft som pustes ut og strømningshastigheten til denne luften (flow). Tilsammen gir målingene svært
+            god informasjon om lungenes og luftveienes funksjoner. Spirometri brukes svært mye hos f.eks. astma- og
+            KOLS-pasienter.
+            <br><br>
+            Målingene som gjøres ved spirometri er uavhengig av muskelstyrke og fysisk kondisjon, og gir derfor et
+            objektivt mål på lungefunksjonen.
+            <br><br>
+            Høyskolen Kristiania er en ledende aktør i utviklingen av våre fagfelt. Fysiologisk testlaboratorium er en
+            del av et aktivt læringsmiljø på høyskolen, med fokus på grundighet, kompetanse og sikkerhet. Som student på
+            våre bachelorstudier får du prøvd ut dine kunnskaper i praksis.
+        </p>
+        <h4>LAKTATPROFIL</h4>
+        <p class="infoTxt">
+            Laktatprofiltesten brukes for å finne egnede intensitetssoner på trening. Denne testen ble tidligere kalt
+            anaerob terskel og gjennomføres på tredemølle eller sykkel.
+            <br><br>
+            Her arbeides det med konstant belastning i fem minutter, så tas det en blodprøve og belastningen økes. Dette
+            fortsetter til det er endel laktat i blodet, og belastningen oppleves som moderat hard til hard.
+            <br><br>
+            I tillegg til blodlaktat måler vi hjertefrekvens og oksygenopptak.
+        </p>
+        <p class="bold">Førstegangs konsultasjon 60min / Oppfølgende konsultasjon 45min</p>
+        <st-medium-btn label="BESTILL TIME"/>
     </div>
 </template>
 
 <script>
 
     // Tells the component what to export
-    import StTreatmentField from "../components/Fields/StTreatmentField";
     import StMediumBtn from "../components/Buttons/StMediumBtn";
-    import StQuoteField from "@/views/StQuoteField";
-    import StContactInfo from "@/views/StContactInfo";
 
     export default {
         name: 'Home',
         components: {
-            StContactInfo,
-            StQuoteField,
-            StTreatmentField,
             StMediumBtn
             // Always declare the component you want to render
         },
@@ -110,7 +115,6 @@
     .infoTxt,
     li {
         max-width: 400px;
-        max-height: 400px;
         width: 85vw;
         font-size: 14pt;
         text-align: left;
@@ -125,16 +129,6 @@
         color: black;
     }
 
-    .treatments {
-
-    }
-
-    .treatmentField > p {
-        font-size: 18px;
-        margin-left: 2pt;
-    }
-
-
     .imgContainer {
         max-width: 400px;
         max-height: 400px;
@@ -144,5 +138,13 @@
 
     .imgContainer > img {
         width: 100%;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .center {
+        text-align: center;
     }
 </style>

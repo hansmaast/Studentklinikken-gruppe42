@@ -3,10 +3,18 @@
         <h1>Studentklinikken</h1>
         <p>Hei! Vi tilbyr følgende:</p>
         <div class="treatments">
-            <st-treatment-field treatment="Akupunktur"/>
-            <st-treatment-field treatment="Kostholdsveiledning"/>
-            <st-treatment-field treatment="Osteopati"/>
-            <st-treatment-field treatment="Fysiologisk testlab"/>
+            <router-link to="akupunktur">
+                <st-treatment-field treatment="Akupunktur"/>
+            </router-link>
+            <router-link to="kostholdsveiledning">
+                <st-treatment-field treatment="Kostholdsveiledning"/>
+            </router-link>
+            <router-link to="osteopati">
+                <st-treatment-field treatment="Osteopati"/>
+            </router-link>
+            <router-link to="fysiologisktestlab">
+                <st-treatment-field treatment="Fysiologisk testlab"/>
+            </router-link>
         </div>
         <st-medium-btn label="BESTILL TIME"/>
         <st-quote-field/>
@@ -54,7 +62,7 @@
         <div class="imgContainer">
             <img src="../../public/img/MapPerson.svg" alt="">
         </div>
-        <st-medium-btn label="BESTILL TIME" />
+        <st-medium-btn label="BESTILL TIME"/>
     </div>
 </template>
 

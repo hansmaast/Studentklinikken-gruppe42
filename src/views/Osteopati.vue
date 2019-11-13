@@ -1,84 +1,46 @@
 <template>
     <div class="mainContainer">
-        <h1>Studentklinikken</h1>
-        <p>Hei! Vi tilbyr følgende:</p>
-        <div class="treatments">
-            <st-treatment-field treatment="Akupunktur"/>
-            <st-treatment-field treatment="Kostholdsveiledning"/>
-            <st-treatment-field treatment="Osteopati"/>
-            <st-treatment-field treatment="Fysiologisk testlab"/>
-        </div>
+        <h1>Osteopati</h1>
+        <p class="infoTxt">En osteopat undersøker og behandler muskel- og skjelettsmerter med manuelle
+            behandlingsteknikker på benk. Terapeuten fokuserer på å avdekke funksjons- og bevegelsesforstyrrelser som
+            kan være med på å skape smerte. Behandlingen egner seg for pasienter i alle aldere.</p>
         <st-medium-btn label="BESTILL TIME"/>
-        <st-quote-field/>
         <div class="imgContainer">
-            <img src="../../public/img/Vect.png" alt="">
+            <img src="../../public/img/Osteopati.svg" alt="">
         </div>
-        <h4>BEHANDLINGSTILBUD</h4>
-        <p class="infoTxt">Vi behandler akutte og langvarige plager / ubehag, men kan også hjelpe til med forebyggende
-            tiltak.
-            Du kan forvente en individuell samtale, undersøkelse, behandling og råd rettet mot dine behov. <br><br>
-            Studentene har selv ansvar for konsultasjonene, men har alltid en erfaren veileder tilgjengelig. <br><br>
-            Du trenger ikke henvisning fra lege.
-        </p>
-        <h4>PRISER</h4>
-        <ul>
-            <li>
-                <span>Første behandling ordinær 300,- / rabatt* 150,-</span>
-            </li>
-            <li>
-                <span>Oppfølgende behandling ordinær 220,- / rabatt*100,-</span>
-            </li>
-            <li>
-                <span>*Rabatten gjelder: Honnør over 60 år, ungdom under 18 år, studenter og HK ansatte</span>
-            </li>
-            <li>
-                <span>Kostveiledning er gratis</span>
-            </li>
-            <li>
-                <span>Sommerklinikken for akupunktur og osteopati har egen priser</span>
-            </li>
-        </ul>
-        <div class="imgContainer">
-            <img src="../../public/img/DoctorLogo2.svg" alt="">
-        </div>
-        <h4>ADRESSE</h4>
+        <h4>OSTEOPATI SOM HELSEPROFESJON</h4>
         <p class="infoTxt">
-            Prinsens gate 9, 0153 Oslo. Henvend deg alltid i Besøksresepsjonen før konsultasjonen. <br><br>
-            Klinikken med venterom ligger i 3. etg. i samme bygg. Vi har heis.
+            Osteopati baseres på vitenskapelige og kliniske fag. En osteopat undersøker og behandler ved hjelp av den
+            biopsykososiale modellen og tar utgangspunkt i at god helse ikke bare er fravær av sykdom, men også et
+            velfungerende muskel- og skjelettsystem. Gjennom osteopatibehandling ønsker en å fremme kroppens evne til å
+            hjelpe seg selv. Behandlingen er trygg og individualisert. <br><br>
+
+            Osteopaten vil sammen med deg lage en plan for dine behandlinger, og fortelle hva du kan forvente og hva du
+            selv må ta ansvar for.
         </p>
-        <h4>HVILKEN BEHANDLING PASSER BEST FOR DEG?</h4>
-        <p class="infoTxt">Usikker på hvilken behandling som passer best for deg?
-            Ta kontakt med oss så hjelper vi deg!
-        </p>
-        <st-contact-info/>
         <div class="imgContainer">
-            <img src="../../public/img/MapPerson.svg" alt="">
+            <img src="../../public/img/2Osteopati.svg" alt="">
         </div>
-        <st-medium-btn label="BESTILL TIME" />
+        <p>
+            Førstegangs konsultasjon 90min / Oppfølgende konsultasjon 45min
+        </p>
+        <st-medium-btn label="BESTILL TIME"/>
     </div>
 </template>
 
 <script>
 
-    // Tells the component what to export
-    import StTreatmentField from "../components/Fields/StTreatmentField";
     import StMediumBtn from "../components/Buttons/StMediumBtn";
-    import StQuoteField from "@/views/StQuoteField";
     import StContactInfo from "@/views/StContactInfo";
 
     export default {
         name: 'Home',
         components: {
-            StContactInfo,
-            StQuoteField,
-            StTreatmentField,
             StMediumBtn
-            // Always declare the component you want to render
         },
         data() {
             // The userData object is bound to the v-model.. Needs some more knowlege about this
             return {
-                textFromInput: 'Write something'
             }
         },
         methods: {
