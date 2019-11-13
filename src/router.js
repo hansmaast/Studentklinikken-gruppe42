@@ -18,6 +18,26 @@ const router = new Router({
             component: () => import('./views/Home.vue')
         },
         {
+            path: '/akupunktur',
+            name: 'akupunktur',
+            component: () => import('./views/Akupunktur.vue')
+        },
+        {
+            path: '/osteopati',
+            name: 'osteopati',
+            component: () => import('./views/Osteopati.vue')
+        },
+        {
+            path: '/kostholdsveiledning',
+            name: 'kostholdsveiledning',
+            component: () => import('./views/Kostholdsveiledning.vue')
+        },
+        {
+            path: '/fysiologisktestlab',
+            name: 'fysiologisktestlab',
+            component: () => import('./views/FysiologiskTestlab.vue')
+        },
+        {
             path: '/login',
             name: 'login',
             component: () => import('./views/Login.vue')
