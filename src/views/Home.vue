@@ -11,7 +11,12 @@
         <st-medium-btn label="BESTILL TIME"/>
         <st-quote-field/>
         <div class = "imgContainer">
+<<<<<<< HEAD
             <img src="../../public/img/2ansatte.svg" alt="">
+=======
+            <img src="../../public/img/Vect.png" alt="">
+
+>>>>>>> a0c090d3b64ef98fe2df8be035acab9fce5e2d3d
         </div>
         <h4>BEHANDLINGSTILBUD</h4>
     </div>
