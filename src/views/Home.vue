@@ -12,8 +12,8 @@
         <st-quote-field/>
         <div class = "imgContainer">
             <img src="../../public/img/2ansatte.svg" alt="">
-
         </div>
+        <h4>BEHANDLINGSTILBUD</h4>
     </div>
 </template>
 
@@ -49,17 +49,15 @@
 </script>
 
 <style scoped>
-    .mainContainer {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+    * {
+        margin-bottom: 10%;
     }
 
+    h1 {
+        margin-bottom: 4%;
+    }
     .treatments {
-        margin-bottom: 10%;
+
     }
 
     .treatmentField > p {
