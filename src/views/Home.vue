@@ -11,7 +11,7 @@
         <st-medium-btn label="BESTILL TIME"/>
         <st-quote-field/>
         <div class = "imgContainer">
-            <img src="../../public/img/2ansatte.svg" alt="">
+            <img src="../../public/img/Vect.png" alt="">
 
         </div>
     </div>
