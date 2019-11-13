@@ -10,6 +10,10 @@
         </div>
         <st-medium-btn label="BESTILL TIME"/>
         <st-quote-field/>
+        <div class = "imgContainer">
+            <img src="../../public/img/2ansatte.svg" alt="">
+
+        </div>
     </div>
 </template>
 
@@ -63,8 +67,15 @@
         margin-left: 2pt;
     }
 
-    .iconContainer > img {
+
+    .imgContainer {
+        max-width: 400px;
+        max-height: 400px;
+        width: 75vw;
+        height: 75vw;
+    }
+
+    .imgContainer > img {
         width: 100%;
-        height: 100%;
     }
 </style>
