@@ -39,6 +39,11 @@
         overflow: hidden;
     }
 
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
     .routerView {
         height: 100vh;
         width: 100vw;
@@ -79,6 +84,14 @@
     button {
         padding: 0.7em 20px;
         background: rgba(65, 184, 131, 0.44);
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .center {
+        text-align: center;
     }
 
     input:focus {

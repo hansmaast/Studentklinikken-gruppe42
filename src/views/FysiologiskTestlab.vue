@@ -139,12 +139,4 @@
     .imgContainer > img {
         width: 100%;
     }
-
-    .bold {
-        font-weight: bold;
-    }
-
-    .center {
-        text-align: center;
-    }
 </style>
