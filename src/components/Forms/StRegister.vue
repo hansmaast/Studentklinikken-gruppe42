@@ -36,9 +36,9 @@
     </div>
 </template>
 <script>
-    import StInputEmail from "../InputFields/StInputEmail";
-    import StInputUser from "../InputFields/StInputUser";
-    import StInputPassword from "../InputFields/StInputPassword"
+    import StInputEmail from "../Fields/StInputEmail";
+    import StInputUser from "../Fields/StInputUser";
+    import StInputPassword from "../Fields/StInputPassword"
     import StSmallBtn from "../Buttons/StSmallBtn";
 
     export default {

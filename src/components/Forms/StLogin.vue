@@ -24,8 +24,8 @@
     </div>
 </template>
 <script>
-    import StInputEmail from "../InputFields/StInputEmail";
-    import StInputPassword from "../InputFields/StInputPassword"
+    import StInputEmail from "../Fields/StInputEmail";
+    import StInputPassword from "../Fields/StInputPassword"
     import StSmallBtn from "../Buttons/StSmallBtn";
 
     export default {
