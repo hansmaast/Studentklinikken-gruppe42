@@ -1,0 +1,98 @@
+<template>
+    <div class="mainContainer">
+        <h1>Akupunktur</h1>
+        <p class="infoTxt bold center">Akupunktur er en persontilpasset
+            behandling der diagnostikk, behandling og oppfølging er skreddersydd for hver pasient med sine unike særtrekk og behov under hvert trinn av behandlingen. </p>
+        <st-medium-btn label="BESTILL TIME"/>
+        <div class="imgContainer">
+            <img src="../../public/img/Akupunktur.svg" alt="">
+        </div>
+        <h4>AKUPUNKTUR</h4>
+        <p class="infoTxt">Enkelt fortalt virker akupunktur ved å stimulere perifere nerver og bindevev som frigjør signalstoffer som har en effekt på det sentrale nervesystemet. Disse signalstoffene regulerer områder i hjernen som blant annet påvirker det autonome nervesystemet.
+            <br><br>
+            Akupunktøren vil i førstegangskonsultasjonen ha fokus på å få oversikt over symptomer og årsaksforhold. I behandlingen settes tynne nåler i spesifikke punkter på kroppen. I tillegg kan det gis annen behandling, for eksempel kopping-massasje eller varmende behandling. Det gid veiledning om kosthold og fysisk aktivitet når dette er aktuelt.
+        </p>
+
+        <div class="imgContainer">
+            <img src="../../public/img/2Akupunktur.svg" alt="">
+        </div>
+        <p>Førstegangs konsultasjon 90min / Oppfølgende konsultasjon 45min</p>
+
+        <st-medium-btn label="BESTILL TIME" />
+    </div>
+</template>
+
+<script>
+
+    // Tells the component what to export
+    import StTreatmentField from "../components/Fields/StTreatmentField";
+    import StMediumBtn from "../components/Buttons/StMediumBtn";
+    import StQuoteField from "@/views/StQuoteField";
+    import StContactInfo from "@/views/StContactInfo";
+
+    export default {
+        name: 'Home',
+        components: {
+            StContactInfo,
+            StQuoteField,
+            StTreatmentField,
+            StMediumBtn
+            // Always declare the component you want to render
+        },
+        data() {
+            // The userData object is bound to the v-model.. Needs some more knowlege about this
+            return {
+                textFromInput: 'Write something'
+            }
+        },
+        methods: {
+            // This is the components method functions, it is basically functions inside an object
+            alertMessage() {
+                // Using "this" to refer to the components own properties?
+                alert(this.textFromInput)
+            }
+        }
+    }
+</script>
+
+<style scoped>
+    * {
+        margin-bottom: 30pt;
+    }
+
+    h1,
+    h4 {
+        margin-bottom: 4%;
+    }
+
+    h4 {
+        max-width: 400px;
+        max-height: 400px;
+        width: 85vw;
+    }
+
+    .infoTxt,
+    li {
+        max-width: 400px;
+        width: 85vw;
+        font-size: 14pt;
+        line-height: 18pt;
+    }
+
+    .treatmentField > p {
+        font-size: 18px;
+        margin-left: 2pt;
+    }
+
+
+    .imgContainer {
+        max-width: 400px;
+        max-height: 400px;
+        width: 75vw;
+        height: 75vw;
+    }
+
+    .imgContainer > img {
+        width: 100%;
+    }
+</style>

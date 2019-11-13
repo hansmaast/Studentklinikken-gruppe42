@@ -13,14 +13,29 @@ const router = new Router({
             component: StartPage
         },
         {
-            path: '/about',
-            name: 'about',
-            component: () => import('./views/About.vue')
+            path: '/home',
+            name: 'home',
+            component: () => import('./views/Home.vue')
         },
         {
-            path: '/contact',
-            name: 'contact',
-            component: () => import('./views/Contact.vue')
+            path: '/akupunktur',
+            name: 'akupunktur',
+            component: () => import('./views/Akupunktur.vue')
+        },
+        {
+            path: '/osteopati',
+            name: 'osteopati',
+            component: () => import('./views/Osteopati.vue')
+        },
+        {
+            path: '/kostholdsveiledning',
+            name: 'kostholdsveiledning',
+            component: () => import('./views/Kostholdsveiledning.vue')
+        },
+        {
+            path: '/fysiologisktestlab',
+            name: 'fysiologisktestlab',
+            component: () => import('./views/FysiologiskTestlab.vue')
         },
         {
             path: '/login',

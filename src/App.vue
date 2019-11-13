@@ -7,14 +7,12 @@
 
 <!-- This contains the components Vue instance information && JS -->
 <script>
-    import HeaderWithSlideOutNav from "./components/Layout/Header/Header";
 
     // Tells the component what to export
     export default {
         name: 'app',
         components: {
             // Always declare the component you want to render
-            HeaderWithSlideOutNav,
         },
         data() {
             // This is kind of the same as props? Hmm... Its sort of like a variable you can send to the components props?
@@ -42,9 +40,24 @@
         overflow: hidden;
     }
 
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
     .routerView {
         height: 100vh;
         width: 100vw;
+    }
+
+    .mainContainer {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: scroll;
     }
 
 
@@ -72,6 +85,14 @@
     button {
         padding: 0.7em 20px;
         background: rgba(65, 184, 131, 0.44);
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .center {
+        text-align: center;
     }
 
     input:focus {
