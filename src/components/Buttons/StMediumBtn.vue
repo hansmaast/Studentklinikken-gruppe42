@@ -14,12 +14,10 @@
 <style scoped>
     button {
         position: relative;
-        width: 90vw;
-        height: 90vh;
+        padding: 13px 0;
+        width: 130px;
         font-size: 14px;
         font-weight: bold;
-        max-width: 110pt;
-        max-height: 39pt;
         text-align: center;
         background-color: #77999E;
         border-radius: 50px;

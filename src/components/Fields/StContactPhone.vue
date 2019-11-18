@@ -18,20 +18,22 @@
 <style scoped>
 
     p {
-        font-size: 14pt;
+        font-size: 14px;
     }
 
     .fieldContainer {
-        padding-bottom: 5px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        padding-left: 5%;
+        box-sizing: border-box;
     }
 
     .iconContainer {
         grid-area: b;
         height: 20px;
         width: 20px;
+        margin-right: 10px;
     }
 
     .iconContainer > img {

@@ -4,11 +4,11 @@
             <img src="../../public/img/doctor.svg" alt="">
         </div>
         <h2>Studentklinikken</h2>
-        <router-link to="login">
-            <st-big-btn label="LOGG INN"/>
-        </router-link>
         <router-link to="register">
-            <st-big-btn label="REGISTRER DEG"/>
+            <st-big-btn label="Registrer deg"/>
+        </router-link>
+        <router-link to="login">
+            <st-big-btn label="Logg inn"/>
         </router-link>
         <p>Fortsett uten bruker</p>
     </div>
@@ -42,8 +42,16 @@
 </script>
 
 <style scoped>
+    /*
+        Marging and positions are up to date with the prototype:)
+    */
     .mainContainer {
-        justify-content: center;
+        justify-content: flex-start;
+        margin-top: 92px;
+    }
+
+    h2 {
+        margin: 0 auto 38px auto;
     }
 
     .imgContainer {

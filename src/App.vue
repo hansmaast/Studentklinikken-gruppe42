@@ -40,6 +40,24 @@
         overflow: hidden;
     }
 
+    h1 {
+        font-size: 32px;
+        margin-top: 67px;
+        margin-bottom: 42px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+        color: #333333;
+    }
+
     a {
         text-decoration: none;
         color: inherit;
@@ -65,6 +83,13 @@
         font-size: 14px;
     }
 
+    .ingress {
+        text-align: center;
+        width: 85vw;
+        max-width: 400px;
+        font-size: 14px;
+    }
+
     select,
     textarea {
         outline: none;
@@ -85,6 +110,8 @@
     button {
         padding: 0.7em 20px;
         background: rgba(65, 184, 131, 0.44);
+        /*Removes border on every button*/
+        border: none;
     }
 
     .bold {

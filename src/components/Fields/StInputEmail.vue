@@ -29,10 +29,10 @@
 
     .inputContainer {
         border-bottom: 1px solid #9d9d9d;
-        height: 81px;
+        height: 61px;
         width: 271px;
-        padding-bottom: 5px;
-        margin-bottom: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
         display: grid;
         justify-content: flex-start;
         align-items: flex-end;
@@ -43,6 +43,7 @@
     label {
         justify-self: left;
         grid-area: a;
+        margin-top: 0;
     }
 
     input {

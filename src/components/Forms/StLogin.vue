@@ -42,6 +42,8 @@
 
     h1 {
         grid-area: a;
+        margin-top: 0;
+        margin-bottom: 57px;
     }
 
     .fields {
@@ -53,6 +55,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 </style>

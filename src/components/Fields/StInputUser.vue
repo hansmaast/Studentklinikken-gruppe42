@@ -29,9 +29,9 @@
 
     .inputContainer {
         border-bottom: 1px solid #9d9d9d;
-        height: 81px;
+        height: 61px;
         width: 271px;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
         margin-bottom: 20px;
         display: grid;
         justify-content: flex-start;
