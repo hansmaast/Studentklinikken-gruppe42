@@ -1,6 +1,6 @@
 <template>
     <div class="quoteContainer">
-            <img src="../../public/img/quoteText.svg" alt="">
+            <img src="../../../public/img/quoteText.svg" alt="">
     </div>
 </template>
 <script>

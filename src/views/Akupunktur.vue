@@ -27,8 +27,8 @@
     // Tells the component what to export
     import StTreatmentField from "../components/Fields/StTreatmentField";
     import StMediumBtn from "../components/Buttons/StMediumBtn";
-    import StQuoteField from "@/views/StQuoteField";
-    import StContactInfo from "@/views/StContactInfo";
+    import StQuoteField from "../components/Layout/StQuoteField";
+    import StContactInfo from "../components/Layout/StContactInfo";
 
     export default {
         name: 'Home',
@@ -37,19 +37,13 @@
             StQuoteField,
             StTreatmentField,
             StMediumBtn
-            // Always declare the component you want to render
         },
         data() {
-            // The userData object is bound to the v-model.. Needs some more knowlege about this
             return {
-                textFromInput: 'Write something'
             }
         },
         methods: {
-            // This is the components method functions, it is basically functions inside an object
             alertMessage() {
-                // Using "this" to refer to the components own properties?
-                alert(this.textFromInput)
             }
         }
     }

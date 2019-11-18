@@ -6,8 +6,8 @@
     </div>
 </template>
 <script>
-    import StContactMail from "../components/Fields/StContactMail"
-    import StContactPhone from "../components/Fields/StContactPhone"
+    import StContactMail from "../Fields/StContactMail"
+    import StContactPhone from "../Fields/StContactPhone"
 
     export default {
         name: 'st-contact-info',
