@@ -1,7 +1,7 @@
 <template>
     <div class="mainContainer">
         <h1>Studentklinikken</h1>
-        <p>Hei! Vi tilbyr følgende:</p>
+        <p>Hei Elisabeth! 👋 <br> Vi tilbyr:</p>
         <div class="treatments">
             <router-link to="akupunktur">
                 <st-treatment-field treatment="Akupunktur"/>
@@ -18,6 +18,7 @@
         </div>
         <st-medium-btn label="BESTILL TIME"/>
         <st-quote-field/>
+        <!-- TODO: Fiks bilde slik at det blir bedre kvalitet?:) -->
         <div class="imgContainer">
             <img src="../../public/img/Vect.png" alt="">
         </div>
@@ -104,15 +105,23 @@
         margin-bottom: 30pt;
     }
 
-    h1,
-    h4 {
-        margin-bottom: 4%;
-    }
-
     h4 {
         max-width: 400px;
         max-height: 400px;
-        width: 85vw;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    p{
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    ul {
+        margin: 0;
     }
 
     .infoTxt,
@@ -120,17 +129,21 @@
         max-width: 400px;
         max-height: 400px;
         width: 85vw;
-        font-size: 14pt;
+        font-size: 14px;
         text-align: left;
         line-height: 18pt;
     }
 
     li {
         color: #CAE1E4;
+        margin: 5px;
+        font-size: 20px;
     }
 
     li > span {
-        color: black;
+        color: #333333;
+        font-size: 14px;
+        font-weight: 500;
     }
 
     .treatments {
@@ -148,6 +161,7 @@
         max-height: 400px;
         width: 75vw;
         height: 75vw;
+        margin-bottom: 20px;
     }
 
     .imgContainer > img {

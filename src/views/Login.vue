@@ -1,9 +1,6 @@
 <template>
     <div class="mainContainer">
         <st-login/>
-        <div class="imgContainer">
-            <img src="../../public/img/fluidPlants.svg" alt="">
-        </div>
     </div>
 </template>
 
@@ -20,12 +17,13 @@
 </script>
 
 <style scoped>
+    /*
+        Ferdig med pirkings fra prototype
+    */
 
-    .imgContainer {
-        max-width: 400px;
-        max-height: 400px;
-        width: 75vw;
-        height: 75vw;
+    .mainContainer {
+        display: flex;
+        margin-top: 166px;
     }
 
     .imgContainer > img {

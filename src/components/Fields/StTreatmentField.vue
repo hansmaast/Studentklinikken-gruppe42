@@ -18,6 +18,7 @@
     .treatmentField {
         border-bottom: 1px solid #9d9d9d;
         padding-top: 10pt;
+        padding-bottom: 6px;
         margin: 1px 0;
         display: flex;
         width: 271px;

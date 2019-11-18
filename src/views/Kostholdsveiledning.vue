@@ -1,7 +1,7 @@
 <template>
     <div class="mainContainer">
         <h1>Kostholdsveiledning</h1>
-        <p>Kostveiledningen gjøres av avgangsstudenter som tar en bachelorgrad i ernæring
+        <p class="ingress">Kostveiledningen gjøres av avgangsstudenter som tar en bachelorgrad i ernæring
              under veiledning av autoriserte kliniske ernæringsfysiologer.</p>
         <st-medium-btn label="BESTILL TIME"/>
         <div class="imgContainer">
@@ -56,32 +56,45 @@
         margin-bottom: 30pt;
     }
 
-    h1,
-    h4 {
-        margin-bottom: 4%;
-    }
-
     h4 {
         max-width: 400px;
         max-height: 400px;
-        width: 85vw;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    p{
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    ul {
+        margin: 0;
     }
 
     .infoTxt,
     li {
         max-width: 400px;
+        max-height: 400px;
         width: 85vw;
-        font-size: 14pt;
+        font-size: 14px;
         text-align: left;
         line-height: 18pt;
     }
 
     li {
         color: #CAE1E4;
+        margin: 5px;
+        font-size: 20px;
     }
 
     li > span {
-        color: black;
+        color: #333333;
+        font-size: 14px;
+        font-weight: 500;
     }
 
     .treatments {
@@ -99,6 +112,7 @@
         max-height: 400px;
         width: 75vw;
         height: 75vw;
+        margin-bottom: 20px;
     }
 
     .imgContainer > img {

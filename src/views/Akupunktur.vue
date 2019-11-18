@@ -1,7 +1,7 @@
 <template>
     <div class="mainContainer">
         <h1>Akupunktur</h1>
-        <p class="infoTxt bold center">Akupunktur er en persontilpasset
+        <p class="ingress">Akupunktur er en persontilpasset
             behandling der diagnostikk, behandling og oppfølging er skreddersydd for hver pasient med sine unike særtrekk og behov under hvert trinn av behandlingen. </p>
         <st-medium-btn label="BESTILL TIME"/>
         <div class="imgContainer">
@@ -60,23 +60,49 @@
         margin-bottom: 30pt;
     }
 
-    h1,
-    h4 {
-        margin-bottom: 4%;
-    }
-
     h4 {
         max-width: 400px;
         max-height: 400px;
-        width: 85vw;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    p{
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    ul {
+        margin: 0;
     }
 
     .infoTxt,
     li {
         max-width: 400px;
+        max-height: 400px;
         width: 85vw;
-        font-size: 14pt;
+        font-size: 14px;
+        text-align: left;
         line-height: 18pt;
+    }
+
+    li {
+        color: #CAE1E4;
+        margin: 5px;
+        font-size: 20px;
+    }
+
+    li > span {
+        color: #333333;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .treatments {
+
     }
 
     .treatmentField > p {
@@ -90,6 +116,7 @@
         max-height: 400px;
         width: 75vw;
         height: 75vw;
+        margin-bottom: 20px;
     }
 
     .imgContainer > img {
