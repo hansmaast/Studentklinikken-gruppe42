@@ -18,7 +18,7 @@
         <textarea placeholder="Legg til kommentar her...">
         </textarea>
         </div>
-        <p>Pris: {{this.price}}</p>
+        <p>Pris: {{this.price}},-</p>
         <p>Behandling: {{this.treatment}}</p>
         <p>Dato: {{this.date.toLocaleDateString()}}</p>
         <st-medium-btn label="BESTILL"/>
@@ -70,6 +70,7 @@
     .calendar {
         width: 85vw;
         max-width: 400px;
+        border: none;
     }
 
     * {
