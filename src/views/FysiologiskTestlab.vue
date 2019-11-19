@@ -10,7 +10,7 @@
         </p>
         <st-medium-btn label="BESTILL TIME"/>
         <div class="imgContainer">
-            <img src="../../public/img/Testlab.svg" alt="">
+            <img src="../../public/img/FysiologiskTestLab.png" alt="">
         </div>
         <h4>FYSIOLOGISK TESTLAB</h4>
         <p class="infoTxt">Testing av egen helse er samtidig både motiverende og gir verdifull informasjon for mange
@@ -38,7 +38,7 @@
             Etter avsluttet test gjennomgås testresultatene med lege/testpersonell som igangsetter tiltak, hvis behov.
         </p>
         <div class="imgContainer">
-            <img src="../../public/img/2Testlab.svg" alt="">
+            <img src="../../public/img/FysiologiskTestLab2.png" alt="">
         </div>
         <h4>SPIROMETRI - LUNGEFUNKSJONSTEST</h4>
         <p class="infoTxt">
