@@ -1,17 +1,23 @@
 const userData = [{
-    name: 'HansXYXY',
-    email: 'hans@xyxy.no',
+    name: 'Elisabeth',
+    email: 'ebeth@xyxy.no',
     phoneNumber: '12345678',
-    treatment: 'Life Management',
-    appointment: '04.10.2019',
-    office: 'Waldemar Thranes gate 66'
+    booking: [{
+        treatment: 'Akupunktur',
+        date: '04.10.2019',
+        time: '10.30',
+        address: 'Waldemar Thranes gate 66'
+    }]
 }, {
     name: 'Grete Snitzel',
     email: 'greteSnitz@snitzel.no',
     phoneNumber: '87654321',
-    treatment: 'Low life living',
-    appointment: '02.10.2019',
-    office: 'Kristian Kroghs gate 12'
+    booking: [{
+        treatment: 'Akupunktur',
+        date: '04.10.2019',
+        time: '10.30',
+        address: 'Waldemar Thranes gate 66'
+    }]
 }];
 
 export default userData;

@@ -18,6 +18,16 @@ const router = new Router({
             component: () => import('./views/Home.vue')
         },
         {
+            path: '/booking',
+            name: 'booking',
+            component: () => import('./views/Booking.vue')
+        },
+        {
+            path: '/mybookings',
+            name: 'myBooking',
+            component: () => import('./views/MyBookings.vue')
+        },
+        {
             path: '/akupunktur',
             name: 'akupunktur',
             component: () => import('./views/Akupunktur.vue')

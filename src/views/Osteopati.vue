@@ -29,9 +29,7 @@
 </template>
 
 <script>
-
     import StMediumBtn from "../components/Buttons/StMediumBtn";
-    import StContactInfo from "@/views/StContactInfo";
 
     export default {
         name: 'Home',
@@ -39,16 +37,10 @@
             StMediumBtn
         },
         data() {
-            // The userData object is bound to the v-model.. Needs some more knowlege about this
             return {
             }
         },
         methods: {
-            // This is the components method functions, it is basically functions inside an object
-            alertMessage() {
-                // Using "this" to refer to the components own properties?
-                alert(this.textFromInput)
-            }
         }
     }
 </script>

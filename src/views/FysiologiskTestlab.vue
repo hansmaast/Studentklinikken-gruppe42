@@ -54,7 +54,7 @@
             del av et aktivt læringsmiljø på høyskolen, med fokus på grundighet, kompetanse og sikkerhet. Som student på
             våre bachelorstudier får du prøvd ut dine kunnskaper i praksis.
         </p>
-        <h4>LAKTATPROFIL</h4>
+        <h4>LAKTATPROFIl</h4>
         <p class="infoTxt">
             Laktatprofiltesten brukes for å finne egnede intensitetssoner på trening. Denne testen ble tidligere kalt
             anaerob terskel og gjennomføres på tredemølle eller sykkel.
@@ -78,21 +78,11 @@
         name: 'Home',
         components: {
             StMediumBtn
-            // Always declare the component you want to render
         },
         data() {
-            // The userData object is bound to the v-model.. Needs some more knowlege about this
-            return {
-                textFromInput: 'Write something'
-            }
+            return {}
         },
-        methods: {
-            // This is the components method functions, it is basically functions inside an object
-            alertMessage() {
-                // Using "this" to refer to the components own properties?
-                alert(this.textFromInput)
-            }
-        }
+        methods: {}
     }
 </script>
 
@@ -108,7 +98,7 @@
         margin-bottom: 20px;
     }
 
-    p{
+    p {
         text-align: center;
         font-weight: 500;
         font-size: 18px;
@@ -123,7 +113,6 @@
     .infoTxt,
     li {
         max-width: 400px;
-        max-height: 400px;
         width: 85vw;
         font-size: 14px;
         text-align: left;

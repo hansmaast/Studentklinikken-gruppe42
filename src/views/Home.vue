@@ -1,7 +1,7 @@
 <template>
     <div class="mainContainer">
         <h1>Studentklinikken</h1>
-        <p>Hei Elisabeth! 👋 <br> Vi tilbyr:</p>
+        <p>Hei {{this.user[0].name}}! 👋 <br> Vi tilbyr:</p>
         <div class="treatments">
             <router-link to="akupunktur">
                 <st-treatment-field treatment="Akupunktur"/>
@@ -16,7 +16,9 @@
                 <st-treatment-field treatment="Fysiologisk testlab"/>
             </router-link>
         </div>
-        <st-medium-btn label="BESTILL TIME"/>
+        <router-link to="booking">
+            <st-medium-btn label="BESTILL TIME"/>
+        </router-link>
         <st-quote-field/>
         <!-- TODO: Fiks bilde slik at det blir bedre kvalitet?:) -->
         <div class="imgContainer">
@@ -55,7 +57,7 @@
             Prinsens gate 9, 0153 Oslo. Henvend deg alltid i Besøksresepsjonen før konsultasjonen. <br><br>
             Klinikken med venterom ligger i 3. etg. i samme bygg. Vi har heis.
         </p>
-        <h4>HVILKEN BEHANDLING PASSER BEST FOR DEG?</h4>
+        <h4>HVILKEN BEHANDLING PASSER <br>BEST FOR DEG?</h4>
         <p class="infoTxt">Usikker på hvilken behandling som passer best for deg?
             Ta kontakt med oss så hjelper vi deg!
         </p>
@@ -63,7 +65,9 @@
         <div class="imgContainer">
             <img src="../../public/img/MapPerson.svg" alt="">
         </div>
-        <st-medium-btn label="BESTILL TIME"/>
+        <router-link to="booking">
+            <st-medium-btn label="BESTILL TIME"/>
+        </router-link>
     </div>
 </template>
 
@@ -72,8 +76,9 @@
     // Tells the component what to export
     import StTreatmentField from "../components/Fields/StTreatmentField";
     import StMediumBtn from "../components/Buttons/StMediumBtn";
-    import StQuoteField from "@/views/StQuoteField";
-    import StContactInfo from "@/views/StContactInfo";
+    import StQuoteField from "../components/Layout/StQuoteField";
+    import StContactInfo from "../components/Layout/StContactInfo";
+    import userData from "../userData/userData";
 
     export default {
         name: 'Home',
@@ -87,7 +92,7 @@
         data() {
             // The userData object is bound to the v-model.. Needs some more knowlege about this
             return {
-                textFromInput: 'Write something'
+                user: userData
             }
         },
         methods: {
@@ -112,7 +117,7 @@
         margin-bottom: 20px;
     }
 
-    p{
+    p {
         text-align: center;
         font-weight: 500;
         font-size: 18px;

@@ -25,6 +25,9 @@
 <!-- This contains the components optional CSS -->
 <!-- If "scoped" is not applied, the style will also affect the child components -->
 <style>
+    :root {
+        --main-gray: #9d9d9d;
+    }
 
     body {
         margin: 0;
@@ -90,17 +93,17 @@
         font-size: 14px;
     }
 
-    select,
-    textarea {
-        outline: none;
-        margin: 5px 10px;
-        font-size: 1em;
-        padding: 0.7em;
-        border-radius: 4px;
-        border: 1px solid rgba(53, 73, 94, 0.3);
-        box-shadow: 0px 5px 10px rgba(53, 73, 94, 0.2);
-        transition: all 0.3s;
-    }
+    /*select,*/
+    /*textarea {*/
+    /*    outline: none;*/
+    /*    margin: 5px 10px;*/
+    /*    font-size: 1em;*/
+    /*    padding: 0.7em;*/
+    /*    border-radius: 4px;*/
+    /*    border: 1px solid rgba(53, 73, 94, 0.3);*/
+    /*    box-shadow: 0px 5px 10px rgba(53, 73, 94, 0.2);*/
+    /*    transition: all 0.3s;*/
+    /*}*/
 
     input,
     button {
