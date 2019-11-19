@@ -21,8 +21,9 @@
         <p>Pris: {{this.price}},-</p>
         <p>Behandling: {{this.treatment}}</p>
         <p>Dato: {{this.date.toLocaleDateString()}}</p>
-        <st-medium-btn label="BESTILL"/>
-
+        <router-link to="mybookings">
+            <st-medium-btn @click="submitBooking" label="BESTILL"/>
+        </router-link>
     </div>
 </template>
 
@@ -32,6 +33,7 @@
     import StHourPicker from "@/views/StHourPicker";
     import StMediumBtn from "../components/Buttons/StMediumBtn";
     import StBookingSelector from "@/views/StBookingSelector";
+    import userData from "../userData/userData";
 
     export default {
         name: 'Home',
@@ -45,16 +47,24 @@
         data() {
             // The userData object is bound to the v-model.. Needs some more knowlege about this
             return {
+                // TODO: Link this to local storage?
                 treatment: "Akupunktur",
                 price: parseInt("200"),
                 date: new Date(),
                 hours: ["08.00", "09.00", "10.00", "11.00", "12.00", "13.00", "14.00", "15.00", "16.00", "17.00", "18.00"],
+                user: userData
             }
         },
         methods: {
             // This is the components method functions, it is basically functions inside an object
-            alertMessage() {
+            submitBooking() {
                 // Using "this" to refer to the components own properties?
+                this.user[0].booking.push({
+                    treatment: this.treatment,
+                    date: this.date.toLocaleDateString(),
+                    time: '12.30',
+                    address: 'Waldemars Kjøkken 66'
+                });
             }
         }
     }
