@@ -2,7 +2,7 @@
     <div class="mainContainer">
         <h1>Studentklinikken</h1>
         <p class="ingress">Bestill time hos <br> studentklinikken</p>
-<!--        <st-booking-selector :price="price" :treatment="treatment"/>-->
+        <!--        <st-booking-selector :price="price" :treatment="treatment"/>-->
         <div class="selectFields">
             <select v-model="treatment" name="treatment" id="selectTreatment">
                 <option value="Akupunktur">Akupunktur</option>
@@ -26,9 +26,9 @@
         />
         <h4>Velg klokkeslett:</h4>
         <div id="hourPicker">
-<!--        <st-hour-picker id ="hourPicker" :hours="hours" :appointment="appointment"/>-->
+            <!--        <st-hour-picker id ="hourPicker" :hours="hours" :appointment="appointment"/>-->
             <div class="timeContainer">
-                <div @click="addColor" v-for="hour in hours" class="timeBox">
+                <div @click="selectTime" v-for="hour in hours" class="timeBox">
                     {{hour}}
                 </div>
             </div>
@@ -40,9 +40,9 @@
         <p>Behandling: {{this.treatment}}</p>
         <p>Dato: {{this.date.toLocaleDateString()}}</p>
         <p>Klokkeslett: {{this.time}}</p>
-        <p>Pris: {{this.price}}</p>
+        <p>Pris: {{this.price}},-</p>
         <router-link to="mybookings">
-            <st-medium-btn @click="submitBooking" label="BESTILL"/>
+            <st-medium-btn @click.native="submitBooking" label="BESTILL"/>
         </router-link>
     </div>
 </template>
@@ -79,11 +79,14 @@
                 this.user[0].booking.push({
                     treatment: this.treatment,
                     date: this.date.toLocaleDateString(),
-                    time: '12.30',
-                    address: 'Waldemars Kjøkken 66'
+                    time: this.time,
+                    address: 'Kirkegata 10A'
                 });
+                for (let i = 0; i < this.user[0].booking.length; i++) {
+                    console.log(this.user[0].booking[i]);
+                }
             },
-            addColor(e) {
+            selectTime(e) {
                 let element = document.getElementsByClassName("timeBox");
                 let color = "rgb(119, 153, 158)";
                 for (var i = 0; i < element.length; i++) {
@@ -91,7 +94,6 @@
                         element[i].style.backgroundColor = "";
                     }
                 }
-                console.log(e.target.style.backgroundColor);
                 e.target.style.backgroundColor != color ? e.target.style.backgroundColor = color : e.target.style.backgroundColor = "";
                 this.time = e.target.innerText;
             }
@@ -100,7 +102,41 @@
 </script>
 
 <style scoped>
+    * {
+        margin-bottom: 30pt;
+    }
 
+    h4 {
+        max-width: 400px;
+        max-height: 400px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    p {
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    textarea {
+        width: 75vw;
+        max-width: 400px;
+        height: 100px;
+        outline: none;
+        margin: 5px 10px;
+        font-size: 1em;
+        padding: 0.7em;
+        border-radius: 4px;
+        border: 1px solid var(--main-gray);
+        transition: all 0.3s;
+    }
+
+    textarea::placeholder {
+        color: var(--main-gray);
+    }
 
     .selectFields {
         width: 85vw;
@@ -132,6 +168,7 @@
     .calendar {
         width: 85vw;
         max-width: 400px;
+        border: none;
     }
 
     .timeContainer {
@@ -159,41 +196,5 @@
         justify-content: center;
         align-items: center;
         transition: all 0.2s ease;
-    }
-
-    * {
-        margin-bottom: 30pt;
-    }
-
-    h4 {
-        max-width: 400px;
-        max-height: 400px;
-        margin-top: 0;
-        margin-bottom: 20px;
-    }
-
-    textarea {
-        width: 75vw;
-        max-width: 400px;
-        height: 100px;
-        outline: none;
-        margin: 5px 10px;
-        font-size: 1em;
-        padding: 0.7em;
-        border-radius: 4px;
-        border: 1px solid var(--main-gray);
-        transition: all 0.3s;
-    }
-
-    textarea::placeholder {
-        color: var(--main-gray);
-    }
-
-    p {
-        text-align: center;
-        font-weight: 500;
-        font-size: 18px;
-        margin-top: 0;
-        margin-bottom: 30px;
     }
 </style>
