@@ -25,6 +25,10 @@
 <!-- This contains the components optional CSS -->
 <!-- If "scoped" is not applied, the style will also affect the child components -->
 <style>
+    :root {
+        --main-gray: #9d9d9d;
+    }
+
     body {
         margin: 0;
     }
