@@ -11,8 +11,13 @@
                 is-inline
         />
         <h4>Velg klokkeslett:</h4>
-        <st-hour-picker :hours="hours"/>
-        <textarea></textarea>
+        <div id="hourPicker">
+        <st-hour-picker id ="hourPicker" :hours="hours"/>
+        </div>
+        <div id="textareaBooking">
+        <textarea placeholder="Legg til kommentar her...">
+        </textarea>
+        </div>
         <p>Pris: {{this.price}}</p>
         <p>Behandling: {{this.treatment}}</p>
         <p>Dato: {{this.date.toLocaleDateString()}}</p>
@@ -57,6 +62,11 @@
 
 <style scoped>
 
+    #hourPicker, #textareaBooking {
+        display: -webkit-box;
+        border: none;
+    }
+
     .calendar {
         width: 85vw;
         max-width: 400px;
@@ -76,7 +86,7 @@
     textarea {
         width: 85vw;
         max-width: 400px;
-        height: 400px;
+        height: 100px;
         outline: none;
         margin: 5px 10px;
         font-size: 1em;

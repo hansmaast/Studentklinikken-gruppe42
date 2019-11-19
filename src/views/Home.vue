@@ -57,7 +57,7 @@
             Prinsens gate 9, 0153 Oslo. Henvend deg alltid i Besøksresepsjonen før konsultasjonen. <br><br>
             Klinikken med venterom ligger i 3. etg. i samme bygg. Vi har heis.
         </p>
-        <h4>HVILKEN BEHANDLING PASSER BEST FOR DEG?</h4>
+        <h4>HVILKEN BEHANDLING PASSER <br>BEST FOR DEG?</h4>
         <p class="infoTxt">Usikker på hvilken behandling som passer best for deg?
             Ta kontakt med oss så hjelper vi deg!
         </p>
