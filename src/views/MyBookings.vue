@@ -2,17 +2,19 @@
     <div class="mainContainer">
         <h1>Bookinger</h1>
         <p>{{this.user[0].name}}, <br> Her er dinne kommende timer👋</p>
-<!--        <div>-->
-<!--            <p>{{this.user[0].booking[0].treatment}}</p>-->
-<!--            <p>Dato: {{this.user[0].booking[0].date}}</p>-->
-<!--            <p>Klokkeslett: {{this.user[0].booking[0].time}}</p>-->
-<!--            <p>Adressse: {{this.user[0].booking[0].address}}</p>-->
-<!--        </div>-->
         <div class="bookingCard" v-for="b in this.user[0].booking">
-            <p>{{b.treatment}}</p>
-            <p>Dato: {{b.date}}</p>
-            <p>Klokkeslett: {{b.time}}</p>
-            <p>Adressse: {{b.address}}</p>
+            <p class="head">{{b.treatment}}</p>
+            <p class="date">Dato: </p>
+            <p class="dateText">{{b.date}}</p>
+            <p class="time">Klokkeslett:</p>
+            <p class="timeText">{{b.time}}</p>
+            <p class="address">Adressse: </p>
+            <p class="addressText">{{b.address}}</p>
+            <p class="info">
+                Henvend deg alltid i besøksresepsjonen før konsultasjonen. Klinikken med venterom ligger i
+                3. etg. i samme bygg. Vi har heis.
+            </p>
+            <st-medium-btn class="avbestill" label="Avbestill"/>
         </div>
     </div>
 </template>
@@ -20,11 +22,12 @@
 <script>
     // Tells the component what to export
     import userData from "../userData/userData";
-    import UserInfo from "../../src/components/Cards/UserInfo/UserInfo";
+    import StMediumBtn from "../components/Buttons/StMediumBtn";
+
     export default {
         name: 'Home',
         components: {
-            UserInfo
+            StMediumBtn
             // Always declare the component you want to render
         },
         data() {
@@ -50,6 +53,55 @@
 
     .bookingCard {
         border: 1px solid;
+        width: 85vw;
+        max-width: 400px;
+        display: grid;
+        grid-template-areas: "head head head" "a b b" "c d d" "e f f" "info info info" "foot foot foot";
+        background-color: rgba(28, 42, 105, 0.05);;
+        padding: 10px;
+    }
+
+    .bookingCard > p {
+        font-size: 14px;
+    }
+
+    .head {
+        grid-area: head;
+        width: 100%;
+    }
+
+    .date {
+        grid-area: a;
+    }
+
+    .dateText {
+        grid-area: b;
+    }
+
+    .time {
+        grid-area: c;
+    }
+
+    .timeText {
+        grid-area: d;
+    }
+
+    .address {
+        grid-area: e;
+    }
+
+    .addressText {
+        grid-area: f;
+    }
+
+    .info {
+        grid-area: info;
+        color: #636A7D;
+    }
+
+    .avbestill {
+        grid-area: foot;
+        margin: auto;
     }
 
     .calendar {
