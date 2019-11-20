@@ -6,8 +6,10 @@ const userData = [{
         treatment: 'Akupunktur',
         date: '04.10.2019',
         time: '10.30',
-        address: 'Waldemar Thranes gate 66'
-    }]
+        address: 'Waldemar Thranes gate 66',
+        note: ""
+    }],
+    notes: ""
 }, {
     name: 'Grete Snitzel',
     email: 'greteSnitz@snitzel.no',
@@ -16,8 +18,10 @@ const userData = [{
         treatment: 'Akupunktur',
         date: '04.10.2019',
         time: '10.30',
-        address: 'Waldemar Thranes gate 66'
-    }]
+        address: 'Waldemar Thranes gate 66',
+        note: "",
+    }],
+    notes: ""
 }];
 
 export default userData;

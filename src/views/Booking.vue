@@ -34,7 +34,7 @@
             </div>
         </div>
         <div id="textareaBooking">
-        <textarea placeholder="Legg til kommentar her...">
+        <textarea v-model="note" placeholder="Legg til kommentar her...">
         </textarea>
         </div>
         <p>Behandling: {{this.treatment}}</p>
@@ -68,6 +68,7 @@
                 date: new Date(),
                 time: "08:00",
                 price: parseInt("200"),
+                note: "",
                 hours: ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00"],
                 user: userData
             }
@@ -80,6 +81,7 @@
                     treatment: this.treatment,
                     date: this.date.toLocaleDateString(),
                     time: this.time,
+                    note: this.note,
                     address: 'Kirkegata 10A'
                 });
                 for (let i = 0; i < this.user[0].booking.length; i++) {
@@ -149,7 +151,7 @@
     .selectField {
         -webkit-appearance: none;
         width: 100%;
-        height: 30px;
+        height: auto;
         margin-bottom: 15px;
         border: 0;
         outline: none;
