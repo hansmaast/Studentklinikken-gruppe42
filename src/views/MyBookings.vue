@@ -101,9 +101,9 @@
     }
 
     .bookingCard {
-        border: 1px solid;
         width: 85vw;
         max-width: 400px;
+        border-radius: 5px;
         display: grid;
         grid-template-areas: "head head head" "a b b" "c d d" "e f f" "info info info" "foot foot foot";
         background-color: rgba(28, 42, 105, 0.05);;
