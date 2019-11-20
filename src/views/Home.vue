@@ -61,7 +61,7 @@
         <p class="infoTxt">Usikker på hvilken behandling som passer best for deg?
             Ta kontakt med oss så hjelper vi deg!
         </p>
-        <st-contact-info/>
+        <st-contact-info />
         <div class="imgContainer">
             <img src="../../public/img/MapPerson.svg" alt="">
         </div>
