@@ -45,6 +45,7 @@
         color: #2c3e50;
         margin: 0;
         width: 100%;
+        height: 100%;
         overflow: hidden;
     }
 
@@ -74,6 +75,7 @@
     .routerView {
         height: 100vh;
         width: 100vw;
+        padding-bottom: 61px;
     }
 
     .mainContainer {

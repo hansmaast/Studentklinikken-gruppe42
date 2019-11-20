@@ -24,7 +24,7 @@
                             "c b b b";
         background-color: #f2f2f6;
         max-width: 400px;
-        max-height: 400px;
+        max-height: 100px;
         width: 85vw;
         margin-bottom: 20px;
         border-radius: 5px;
