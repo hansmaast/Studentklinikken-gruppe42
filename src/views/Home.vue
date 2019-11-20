@@ -110,6 +110,12 @@
         margin-bottom: 30pt;
     }
 
+    .mainContainer {
+        margin-bottom: 0;
+    }
+
+
+
     h4 {
         max-width: 400px;
         max-height: 400px;

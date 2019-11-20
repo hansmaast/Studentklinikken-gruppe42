@@ -2,6 +2,7 @@
 <template>
     <div id="app">
         <router-view class="routerView"/>
+        <st-nav-bar/>
     </div>
 </template>
 
@@ -9,9 +10,12 @@
 <script>
 
     // Tells the component what to export
+    import StNavBar from "@/StNavBar";
+
     export default {
         name: 'app',
         components: {
+            StNavBar
             // Always declare the component you want to render
         },
         data() {
@@ -19,7 +23,7 @@
             return {}
         },
         methods: {}
-        }
+    }
 </script>
 
 <!-- This contains the components optional CSS -->
@@ -32,6 +36,7 @@
     body {
         margin: 0;
     }
+
     #app {
         font-family: 'Roboto', sans-serif;
         -webkit-font-smoothing: antialiased;
@@ -93,18 +98,6 @@
         font-size: 14px;
     }
 
-    /*select,*/
-    /*textarea {*/
-    /*    outline: none;*/
-    /*    margin: 5px 10px;*/
-    /*    font-size: 1em;*/
-    /*    padding: 0.7em;*/
-    /*    border-radius: 4px;*/
-    /*    border: 1px solid rgba(53, 73, 94, 0.3);*/
-    /*    box-shadow: 0px 5px 10px rgba(53, 73, 94, 0.2);*/
-    /*    transition: all 0.3s;*/
-    /*}*/
-
     input,
     button {
         text-align: center;
@@ -132,5 +125,20 @@
     button:active {
         background: rgba(76, 228, 165, 0.96);
         box-shadow: 0px 5px 15px rgba(53, 73, 94, 0.4);
+    }
+    @media (min-width: 770px) {
+        #navBar {
+            top: 0%;
+            transform: translate(0, 0%);
+        }
+        .routerView {
+            margin-top: 61px;
+            height: 100vh;
+            width: 100vw;
+        }
+        .navElement {
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }
     }
 </style>
