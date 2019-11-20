@@ -88,14 +88,14 @@
             },
             selectTime(e) {
                 let element = document.getElementsByClassName("timeBox");
-                let color = "rgb(119, 153, 158)";
                 for (var i = 0; i < element.length; i++) {
-                    if (element[i].style.backgroundColor = color) {
-                        element[i].style.backgroundColor = "";
+                    if (element[i].classList.contains('active')) {
+                        element[i].classList.remove('active');
                     }
                 }
-                e.target.style.backgroundColor != color ? e.target.style.backgroundColor = color : e.target.style.backgroundColor = "";
+                e.target.classList.toggle('active');
                 this.time = e.target.innerText;
+                // this.time != e.target.innerText ? this.time = e.target.innerText : this.time = "";
             }
         }
     }
@@ -184,7 +184,7 @@
     .timeContainer::-webkit-scrollbar {
         display: none;
     }
-
+    /*TODO: Change layout for desktop*/
     .timeBox {
         width: 50px;
         height: 36px;
@@ -196,5 +196,10 @@
         justify-content: center;
         align-items: center;
         transition: all 0.2s ease;
+    }
+
+    .active {
+        background-color: rgb(119, 153, 158);
+        color: white;
     }
 </style>
