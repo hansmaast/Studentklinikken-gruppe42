@@ -10,7 +10,9 @@
         <router-link to="login">
             <st-big-btn label="Logg inn"/>
         </router-link>
-        <p>Fortsett uten bruker</p>
+        <router-link to="home">
+            <p>Fortsett uten bruker</p>
+        </router-link>
     </div>
 </template>
 
@@ -60,6 +62,7 @@
         width: 75vw;
         height: 75vw;
     }
+
     .imgContainer > img {
         width: 100%;
         height: 100%;

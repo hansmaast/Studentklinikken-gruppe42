@@ -1,5 +1,5 @@
 <template>
-    <button>{{label}}</button>
+    <button class="st-medium-btn">{{label}}</button>
 </template>
 
 <script>
@@ -12,10 +12,11 @@
 </script>
 
 <style scoped>
-    button {
+    .st-medium-btn {
         position: relative;
         padding: 13px 0;
-        width: 130px;
+        min-width: 130px;
+        width: auto;
         font-size: 14px;
         font-weight: bold;
         text-align: center;

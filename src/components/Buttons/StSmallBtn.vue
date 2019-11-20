@@ -1,5 +1,5 @@
 <template>
-    <button>{{label}}</button>
+    <button class="st-small-btn">{{label}}</button>
 </template>
 
 <script>
@@ -12,10 +12,11 @@
 </script>
 
 <style scoped>
-    button {
+    .st-small-btn {
         position: relative;
         width: 90vw;
         font-size: 12px;
+        font-weight: bold;
         max-width: 105px;
         max-height: 30px;
         text-align: center;

@@ -14,7 +14,16 @@
                 Henvend deg alltid i besøksresepsjonen før konsultasjonen. Klinikken med venterom ligger i
                 3. etg. i samme bygg. Vi har heis.
             </p>
-            <st-medium-btn class="avbestill" label="Avbestill"/>
+            <st-medium-btn @click.native="displayModal = true" class="avbestill" label="Avbestill"/>
+        </div>
+        <div v-if="displayModal" class="modal">
+            <img src="../../public/icon/xIcon.svg" @click="displayModal = false" id="closeBtn" />
+            <div class="modalInfoContainer">
+                <p>Er du sikker på at du vil <br> avbestille timen din?</p>
+                <h4>12. juli 2019 kl 15.00</h4>
+                <st-medium-btn class="modalBtn" label="Bekreft avbestilling"/>
+                <p @click="displayModal = false">Avbryt</p>
+            </div>
         </div>
     </div>
 </template>
@@ -33,6 +42,7 @@
         data() {
             // The userData object is bound to the v-model.. Needs some more knowlege about this
             return {
+                displayModal: false,
                 treatment: "Akupunktur",
                 price: parseInt("200"),
                 date: new Date(),
@@ -42,14 +52,53 @@
         },
         methods: {
             // This is the components method functions, it is basically functions inside an object
-            alertMessage() {
-                // Using "this" to refer to the components own properties?
+            alert(msg) {
+                alert(msg)// Using "this" to refer to the components own properties?
             }
         }
     }
 </script>
 
 <style scoped>
+    .modal {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #77999E;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .modalInfoContainer {
+        margin-bottom: 230px;
+    }
+
+    .modal > img,
+    .modal > div > p,
+    .modal > div > h4 {
+        color: #FDFDFD;
+        margin-bottom: 40px;
+    }
+
+    #closeBtn {
+        align-self: flex-end;
+        margin: 5vw;
+    }
+
+    .modalBtn {
+        background-color: #333333;
+        padding-left: 40px;
+        padding-right: 40px;
+        align-self: flex-end;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    .mainContainer {
+        margin-bottom: 0;
+    }
 
     .bookingCard {
         border: 1px solid;

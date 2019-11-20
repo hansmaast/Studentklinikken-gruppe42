@@ -8,7 +8,9 @@
             Også våre studenter, spesielt de på Bachelor i Fysisk aktivitet og ernæring, har mye undervisning i
             laboratoriet
         </p>
-        <st-medium-btn label="BESTILL TIME"/>
+        <router-link to="booking">
+            <st-medium-btn label="BESTILL TIME"/>
+        </router-link>
         <div class="imgContainer">
             <img src="../../public/img/FysiologiskTestLab.png" alt="">
         </div>
@@ -65,7 +67,9 @@
             I tillegg til blodlaktat måler vi hjertefrekvens og oksygenopptak.
         </p>
         <p class="bold">Førstegangs konsultasjon 60min / Oppfølgende konsultasjon 45min</p>
-        <st-medium-btn label="BESTILL TIME"/>
+        <router-link to="booking">
+            <st-medium-btn label="BESTILL TIME"/>
+        </router-link>
     </div>
 </template>
 

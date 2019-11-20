@@ -4,13 +4,13 @@
         <p class="ingress">Bestill time hos <br> studentklinikken</p>
         <!--        <st-booking-selector :price="price" :treatment="treatment"/>-->
         <div class="selectFields">
-            <select v-model="treatment" name="treatment" id="selectTreatment">
+            <select v-model="treatment" name="treatment" class="selectField">
                 <option value="Akupunktur">Akupunktur</option>
                 <option value="Kostholdsveiledning">Kostholdsveiledning</option>
                 <option value="Osteopati">Osteopati</option>
                 <option value="Fysiologisk testlab">Fysiologisk testlab</option>
             </select>
-            <select v-model="price" name="prisKlasse" id="selectPrice">
+            <select v-model="price" name="prisKlasse" class="selectField">
                 <option value="200">Voksen</option>
                 <option value="150">Student</option>
                 <option value="150">Honnør</option>
@@ -146,12 +146,10 @@
         align-items: center;
     }
 
-    .selectFields > select {
+    .selectField {
         width: 100%;
+        height: auto;
         margin-bottom: 15px;
-    }
-
-    select {
         border: 0;
         outline: none;
         background-color: inherit;

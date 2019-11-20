@@ -4,7 +4,9 @@
         <p class="ingress">En osteopat undersøker og behandler muskel- og skjelettsmerter med manuelle
             behandlingsteknikker på benk. Terapeuten fokuserer på å avdekke funksjons- og bevegelsesforstyrrelser som
             kan være med på å skape smerte. Behandlingen egner seg for pasienter i alle aldere.</p>
-        <st-medium-btn label="BESTILL TIME"/>
+        <router-link to="booking">
+            <st-medium-btn label="BESTILL TIME"/>
+        </router-link>
         <div class="imgContainer">
             <img src="../../public/img/Osteopati.svg" alt="">
         </div>
@@ -24,7 +26,9 @@
         <p>
             Førstegangs konsultasjon 90min / Oppfølgende konsultasjon 45min
         </p>
-        <st-medium-btn label="BESTILL TIME"/>
+        <router-link to="booking">
+            <st-medium-btn label="BESTILL TIME"/>
+        </router-link>
     </div>
 </template>
 
@@ -37,11 +41,9 @@
             StMediumBtn
         },
         data() {
-            return {
-            }
+            return {}
         },
-        methods: {
-        }
+        methods: {}
     }
 </script>
 
@@ -57,7 +59,7 @@
         margin-bottom: 20px;
     }
 
-    p{
+    p {
         text-align: center;
         font-weight: 500;
         font-size: 18px;

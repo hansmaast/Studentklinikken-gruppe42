@@ -2,23 +2,32 @@
     <div class="mainContainer">
         <h1>Akupunktur</h1>
         <p class="ingress">Akupunktur er en persontilpasset
-            behandling der diagnostikk, behandling og oppfølging er skreddersydd for hver pasient med sine unike særtrekk og behov under hvert trinn av behandlingen. </p>
-        <st-medium-btn label="BESTILL TIME"/>
+            behandling der diagnostikk, behandling og oppfølging er skreddersydd for hver pasient med sine unike
+            særtrekk og behov under hvert trinn av behandlingen. </p>
+        <router-link to="booking">
+            <st-medium-btn label="BESTILL TIME"/>
+        </router-link>
         <div class="imgContainer">
             <img src="../../public/img/Akupunktur.svg" alt="">
         </div>
         <h4>AKUPUNKTUR</h4>
-        <p class="infoTxt">Enkelt fortalt virker akupunktur ved å stimulere perifere nerver og bindevev som frigjør signalstoffer som har en effekt på det sentrale nervesystemet. Disse signalstoffene regulerer områder i hjernen som blant annet påvirker det autonome nervesystemet.
+        <p class="infoTxt">Enkelt fortalt virker akupunktur ved å stimulere perifere nerver og bindevev som frigjør
+            signalstoffer som har en effekt på det sentrale nervesystemet. Disse signalstoffene regulerer områder i
+            hjernen som blant annet påvirker det autonome nervesystemet.
             <br><br>
-            Akupunktøren vil i førstegangskonsultasjonen ha fokus på å få oversikt over symptomer og årsaksforhold. I behandlingen settes tynne nåler i spesifikke punkter på kroppen. I tillegg kan det gis annen behandling, for eksempel kopping-massasje eller varmende behandling. Det gid veiledning om kosthold og fysisk aktivitet når dette er aktuelt.
+            Akupunktøren vil i førstegangskonsultasjonen ha fokus på å få oversikt over symptomer og årsaksforhold. I
+            behandlingen settes tynne nåler i spesifikke punkter på kroppen. I tillegg kan det gis annen behandling, for
+            eksempel kopping-massasje eller varmende behandling. Det gid veiledning om kosthold og fysisk aktivitet når
+            dette er aktuelt.
         </p>
 
         <div class="imgContainer">
             <img src="../../public/img/2Akupunktur.svg" alt="">
         </div>
         <p>Førstegangs konsultasjon 90min / Oppfølgende konsultasjon 45min</p>
-
-        <st-medium-btn label="BESTILL TIME" />
+        <router-link to="booking">
+            <st-medium-btn label="BESTILL TIME"/>
+        </router-link>
     </div>
 </template>
 
@@ -39,8 +48,7 @@
             StMediumBtn
         },
         data() {
-            return {
-            }
+            return {}
         },
         methods: {
             alertMessage() {
@@ -61,7 +69,7 @@
         margin-bottom: 20px;
     }
 
-    p{
+    p {
         text-align: center;
         font-weight: 500;
         font-size: 18px;

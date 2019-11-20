@@ -3,7 +3,9 @@
         <h1>Kostholdsveiledning</h1>
         <p class="ingress">Kostveiledningen gjøres av avgangsstudenter som tar en bachelorgrad i ernæring
             under veiledning av autoriserte kliniske ernæringsfysiologer.</p>
-        <st-medium-btn label="BESTILL TIME"/>
+        <router-link to="booking">
+            <st-medium-btn label="BESTILL TIME"/>
+        </router-link>
         <div class="imgContainer">
             <img src="../../public/img/Kosthold.svg" alt="">
         </div>
@@ -14,7 +16,9 @@
             generelt sunt kosthold.
         </p>
         <p>Førstegangs konsultasjon 60min / Oppfølgende konsultasjon 45min</p>
-        <st-medium-btn label="BESTILL TIME"/>
+        <router-link to="booking">
+            <st-medium-btn label="BESTILL TIME"/>
+        </router-link>
     </div>
 </template>
 
