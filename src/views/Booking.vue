@@ -147,6 +147,7 @@
     }
 
     .selectField {
+        -webkit-appearance: none;
         width: 100%;
         height: auto;
         margin-bottom: 15px;
