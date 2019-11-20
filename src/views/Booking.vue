@@ -149,7 +149,7 @@
     .selectField {
         -webkit-appearance: none;
         width: 100%;
-        height: auto;
+        height: 30px;
         margin-bottom: 15px;
         border: 0;
         outline: none;
