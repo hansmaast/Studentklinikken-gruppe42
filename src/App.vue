@@ -2,7 +2,7 @@
 <template>
     <div id="app">
         <router-view class="routerView"/>
-        <st-nav-bar/>
+<!--        <st-nav-bar/>-->
     </div>
 </template>
 
