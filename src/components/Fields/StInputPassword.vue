@@ -53,6 +53,7 @@
         outline: none;
         box-shadow: none;
         text-align: left;
+        background-color: inherit;
     }
 
     .iconContainer {

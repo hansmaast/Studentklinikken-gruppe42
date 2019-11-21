@@ -1,16 +1,16 @@
 <template>
     <div class="mainContainer">
         <h1>Ansatt</h1>
-        <st-login/>
+        <st-ansatt-login/>
     </div>
 </template>
 
 <script>
-    import StLogin from "../../components/Forms/StLogin";
+    import StAnsattLogin from "../../components/Forms/StAnsattLogin";
 
     export default {
         name: 'Login',
-        components: {StLogin},
+        components: {StAnsattLogin},
         data() {
             return {}
         }
@@ -24,7 +24,9 @@
 
     .mainContainer {
         display: flex;
-        margin-top: 166px;
+        background-image: url("../../../public/img/LoginBackground.svg");
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
     }
 
     .imgContainer > img {

@@ -54,6 +54,7 @@
         box-shadow: none;
         border: none;
         text-align: left;
+        background-color: inherit;
     }
 
     .iconContainer {

@@ -23,3 +23,21 @@
     }
 </script>
 
+<style scoped>
+    @media (min-width: 770px) {
+        #navBar {
+            top: 0%;
+            transform: translate(0, 0%);
+        }
+        .routerView {
+            margin-top: 61px;
+            height: 100vh;
+            width: 100vw;
+        }
+        .navElement {
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }
+    }
+</style>
+
