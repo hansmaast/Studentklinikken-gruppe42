@@ -1,18 +1,45 @@
-// This contains the components html && child components
 <template>
-        <router-view class="routerView"/>
+  <div class="viewContainer">
+    <st-ansatt-nav />
+    <router-view class="routerView" />
+  </div>
 </template>
 
 <script>
-    export default {
-        name: 'ansatt',
-        components: {
-            // Always declare the component you want to render
-        },
-        data() {
-            // This is kind of the same as props? Hmm... Its sort of like a variable you can send to the components props?
-            return {}
-        },
-        methods: {}
-    }
+import StAnsattNav from "@/views/ansatt/StAnsattNav";
+
+export default {
+  name: "ansattView",
+  components: {
+    StAnsattNav
+  },
+  data() {
+    // This is kind of the same as props? Hmm... Its sort of like a variable you can send to the components props?
+    return {};
+  },
+  methods: {}
+};
 </script>
+
+<style scoped>
+.viewContainer {
+  display: flex;
+  flex-direction: row;
+}
+/*TODO: Add menu button for small screens..*/
+@media (max-width: 770px) {
+  .boxLinkContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+  }
+  .ansattNav {
+    position: absolute;
+    transform: translate(-100%, 0);
+    transition: transform 0.3s ease;
+  }
+}
+</style>
