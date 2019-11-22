@@ -41,12 +41,12 @@ h5 {
 .ansattNav {
   /*position: absolute;*/
   height: 100vh;
-  width: 300px;
+  width: 350px;
   border-bottom-right-radius: 47px;
   border-top-right-radius: 47px;
   left: 0;
   background-color: #fefefe;
-  box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+  box-shadow: 6px 0 18px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

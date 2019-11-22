@@ -8,7 +8,8 @@ const ansattData = [
   {
     name: "Mr. Doctor",
     email: "doctor@xyxy.no",
-    phoneNumber: "12345678",
+    phoneNr: "12345678",
+    profession: "Akupunktur",
     notification: [
       {
         date: todaysDate.day + "." + todaysDate.month + "." + todaysDate.year,
@@ -44,22 +45,258 @@ const ansattData = [
       {
         from: "Chingo Bing",
         msg:
-            "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
       },
       {
         from: "Berit Bertnsen",
         msg:
-            "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
       },
       {
         from: "Mr. Doctor",
         msg:
-            "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
       },
       {
         from: "Chingu Swool",
         msg:
-            "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+      }
+    ]
+  },
+  {
+    name: "Tanya Banks",
+    email: "tanya@xyxy.no",
+    phoneNr: "12345678",
+    profession: "Ostopati",
+    notification: [
+      {
+        date: todaysDate.day + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Din neste kunde Marianne kommer kl 09.00."
+      },
+      {
+        date:
+          todaysDate.day + 1 + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Personalmøte 16.00."
+      },
+      {
+        date:
+          todaysDate.day + 1 + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Send inn timelister."
+      },
+      {
+        date:
+          todaysDate.day + 2 + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Les igjennom journaler."
+      },
+      {
+        date:
+          todaysDate.day + 4 + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Lunsj med Mamboo kl 1600."
+      }
+    ],
+    messages: [
+      {
+        from: "Tanya Banks",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen? Det gjelder den avtalen vi har kl 1500. Ring meg når det passer!"
+      },
+      {
+        from: "Chingo Bing",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+      },
+      {
+        from: "Berit Bertnsen",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+      },
+      {
+        from: "Mr. Doctor",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+      },
+      {
+        from: "Chingu Swool",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+      }
+    ]
+  },
+  {
+    name: "Bong Ming",
+    email: "bing@xyxy.no",
+    phoneNr: "23445678",
+    profession: "Kostholdsveiledning",
+    notification: [
+      {
+        date: todaysDate.day + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Din neste kunde Marianne kommer kl 09.00."
+      },
+      {
+        date:
+          todaysDate.day + 1 + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Personalmøte 16.00."
+      },
+      {
+        date:
+          todaysDate.day + 1 + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Send inn timelister."
+      },
+      {
+        date:
+          todaysDate.day + 2 + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Les igjennom journaler."
+      },
+      {
+        date:
+          todaysDate.day + 4 + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Lunsj med Mamboo kl 1600."
+      }
+    ],
+    messages: [
+      {
+        from: "Tanya Banks",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen? Det gjelder den avtalen vi har kl 1500. Ring meg når det passer!"
+      },
+      {
+        from: "Chingo Bing",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+      },
+      {
+        from: "Berit Bertnsen",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+      },
+      {
+        from: "Mr. Doctor",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+      },
+      {
+        from: "Chingu Swool",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+      }
+    ]
+  },
+  {
+    name: "Chingu Swool",
+    email: "chingu@xyxy.no",
+    phoneNr: "45364758",
+    profession: "Fysiologisk testlab",
+    notification: [
+      {
+        date: todaysDate.day + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Din neste kunde Marianne kommer kl 09.00."
+      },
+      {
+        date:
+          todaysDate.day + 1 + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Personalmøte 16.00."
+      },
+      {
+        date:
+          todaysDate.day + 1 + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Send inn timelister."
+      },
+      {
+        date:
+          todaysDate.day + 2 + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Les igjennom journaler."
+      },
+      {
+        date:
+          todaysDate.day + 4 + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Lunsj med Mamboo kl 1600."
+      }
+    ],
+    messages: [
+      {
+        from: "Tanya Banks",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen? Det gjelder den avtalen vi har kl 1500. Ring meg når det passer!"
+      },
+      {
+        from: "Chingo Bing",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+      },
+      {
+        from: "Berit Bertnsen",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+      },
+      {
+        from: "Mr. Doctor",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+      },
+      {
+        from: "Chingu Swool",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+      }
+    ]
+  },
+  {
+    name: "Berit Berntsen",
+    email: "b.berntsen@xyxy.no",
+    phoneNr: "54637382",
+    profession: "Osteopati",
+    notification: [
+      {
+        date: todaysDate.day + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Din neste kunde Marianne kommer kl 09.00."
+      },
+      {
+        date:
+          todaysDate.day + 1 + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Personalmøte 16.00."
+      },
+      {
+        date:
+          todaysDate.day + 1 + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Send inn timelister."
+      },
+      {
+        date:
+          todaysDate.day + 2 + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Les igjennom journaler."
+      },
+      {
+        date:
+          todaysDate.day + 4 + "." + todaysDate.month + "." + todaysDate.year,
+        text: "Lunsj med Mamboo kl 1600."
+      }
+    ],
+    messages: [
+      {
+        from: "Tanya Banks",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen? Det gjelder den avtalen vi har kl 1500. Ring meg når det passer!"
+      },
+      {
+        from: "Chingo Bing",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+      },
+      {
+        from: "Berit Bertnsen",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+      },
+      {
+        from: "Mr. Doctor",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
+      },
+      {
+        from: "Chingu Swool",
+        msg:
+          "Hallo! Har du mulighet til å hjelpe meg med en liten ting i morgen?"
       }
     ]
   }
