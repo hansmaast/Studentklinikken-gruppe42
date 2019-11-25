@@ -50,6 +50,7 @@
 import DatePicker from "v-calendar/lib/components/date-picker.umd";
 import StMediumBtn from "../components/Buttons/StMediumBtn";
 import userData from "../userData/userData";
+import { hours } from "../userData/timesheet";
 
 export default {
   name: "Home",
@@ -94,6 +95,8 @@ export default {
         note: this.note,
         address: "Kirkegata 10A"
       });
+      // hours[0].mon = "Testytesty";
+      // console.log(hours);
       for (let i = 0; i < this.user[0].booking.length; i++) {
         console.log(this.user[0].booking[i]);
       }

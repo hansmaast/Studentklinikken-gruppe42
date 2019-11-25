@@ -1,27 +1,27 @@
 <template>
   <div class="mainContainer">
     <h1>Timesheet</h1>
+    <st-time-sheet />
   </div>
 </template>
 
 <script>
-export default {
+  import StTimeSheet from "../../components/Grids/StTimeSheet";
+
+  export default {
   name: "ansatttimeliste",
-  components: {},
+  components: {StTimeSheet},
   data() {
-    return {};
+    return {
+    };
   }
 };
 </script>
 
 <style scoped>
-/*
-        Ferdig med pirkings fra prototype
-    */
 
 .mainContainer {
   display: flex;
-  margin-top: 166px;
 }
 
 .imgContainer > img {
