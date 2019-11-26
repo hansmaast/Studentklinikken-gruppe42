@@ -1,9 +1,8 @@
 <template>
   <div class="mainContainer">
-    <h1>Bookinger</h1>
+    <h1>Historikk</h1>
     <p>
-      {{ this.user[0].name }}, <br />
-      Her er dinne kommende timer👋
+      Her er dine tidligere timer hos studentklinikken
     </p>
     <div class="bookingCard" v-for="b in this.user[0].booking">
       <p class="head">{{ b.treatment }}</p>
@@ -13,15 +12,6 @@
       <p class="timeText">{{ b.time }}</p>
       <p class="address">Adressse:</p>
       <p class="addressText">{{ b.address }}</p>
-      <p class="info">
-        Henvend deg alltid i besøksresepsjonen før konsultasjonen. Klinikken med
-        venterom ligger i 3. etg. i samme bygg. Vi har heis.
-      </p>
-      <st-medium-btn
-        @click.native="displayModal = true"
-        class="avbestill"
-        label="Avbestill"
-      />
     </div>
     <div v-if="displayModal" class="modal">
       <img
@@ -48,7 +38,7 @@ import userData from "../userData/userData";
 import StMediumBtn from "../components/Buttons/StMediumBtn";
 
 export default {
-  name: "MyBookings",
+  name: "MyHistory",
   components: {
     StMediumBtn
     // Always declare the component you want to render
@@ -86,41 +76,6 @@ export default {
 </script>
 
 <style scoped>
-.modal {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #77999e;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.modalInfoContainer {
-  margin-bottom: 230px;
-}
-
-.modal > img,
-.modal > div > p,
-.modal > div > h4 {
-  color: #fdfdfd;
-  margin-bottom: 40px;
-}
-
-#closeBtn {
-  align-self: flex-end;
-  margin: 5vw;
-}
-
-.modalBtn {
-  background-color: #333333;
-  padding-left: 40px;
-  padding-right: 40px;
-  align-self: flex-end;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
-}
 
 .mainContainer {
   margin-bottom: 0;
@@ -134,10 +89,13 @@ export default {
   grid-template-areas: "head head head" "a b b" "c d d" "e f f" "info info info" "foot foot foot";
   background-color: rgba(28, 42, 105, 0.05);
   padding: 10px;
+  padding-left: 30px;
 }
 
 .bookingCard > p {
   font-size: 14px;
+  color: #9d9d9d;
+  text-align: left;
 }
 
 .head {
@@ -169,21 +127,6 @@ export default {
   grid-area: f;
 }
 
-.info {
-  grid-area: info;
-  color: #636a7d;
-}
-
-.avbestill {
-  grid-area: foot;
-  margin: auto;
-}
-
-.calendar {
-  width: 85vw;
-  max-width: 400px;
-}
-
 * {
   margin-bottom: 30pt;
 }
@@ -193,20 +136,6 @@ h4 {
   max-height: 400px;
   margin-top: 0;
   margin-bottom: 20px;
-}
-
-textarea {
-  width: 85vw;
-  max-width: 400px;
-  height: 400px;
-  outline: none;
-  margin: 5px 10px;
-  font-size: 1em;
-  padding: 0.7em;
-  border-radius: 4px;
-  border: 1px solid rgba(53, 73, 94, 0.3);
-  box-shadow: 0px 5px 10px rgba(53, 73, 94, 0.2);
-  transition: all 0.3s;
 }
 
 p {

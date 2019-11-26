@@ -8,7 +8,21 @@ const userData = [
         treatment: "Akupunktur",
         date: "04.10.2019",
         time: "10.30",
-        address: "Waldemar Thranes gate 66",
+        address: "Prinsens gate 9",
+        note: ""
+      },
+      {
+        treatment: "Osteopati",
+        date: "04.11.2019",
+        time: "10.30",
+        address: "Prinsens gate 9",
+        note: ""
+      },
+      {
+        treatment: "Akupunktur",
+        date: "13.11.2019",
+        time: "10.30",
+        address: "Prinsens gate 9",
         note: ""
       }
     ],

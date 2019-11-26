@@ -24,6 +24,16 @@ const router = new Router({
           component: () => import("./views/Home.vue")
         },
         {
+          path: "profile",
+          name: "profile",
+          component: () => import("./views/Profile.vue")
+        },
+        {
+          path: "rettigheter",
+          name: "rettigheter",
+          component: () => import("./views/Rettigheter.vue")
+        },
+        {
           path: "booking",
           name: "booking",
           component: () => import("./views/Booking.vue")
@@ -32,6 +42,11 @@ const router = new Router({
           path: "mybookings",
           name: "myBooking",
           component: () => import("./views/MyBookings.vue")
+        },
+        {
+          path: "myhistory",
+          name: "myhistory",
+          component: () => import("./views/MyHistory.vue")
         },
         {
           path: "akupunktur",

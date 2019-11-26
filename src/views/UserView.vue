@@ -24,6 +24,9 @@ export default {
 </script>
 
 <style scoped>
+.routerView {
+  margin-bottom: 60px;
+}
 @media (min-width: 770px) {
   #navBar {
     top: 0%;
