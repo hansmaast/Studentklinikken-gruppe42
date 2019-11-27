@@ -12,7 +12,7 @@
     <div class="loginFoot">
       <p>Glemt passord?</p>
       <router-link to="ansatt/home">
-        <st-small-btn label="LOGG INN" />
+        <st-small-btn @click.native="$emit(login)" label="LOGG INN" />
       </router-link>
     </div>
   </div>

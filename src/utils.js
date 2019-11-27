@@ -4,5 +4,8 @@ export default {
     nav.classList.contains("closeNav")
       ? nav.classList.replace("closeNav", "openNav")
       : nav.classList.replace("openNav", "closeNav");
+  },
+  login() {
+    let loggedIn = true;
   }
 };

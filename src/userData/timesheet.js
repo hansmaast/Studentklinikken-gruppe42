@@ -1,9 +1,11 @@
+import userData from "./userData"
+
 export const hours = [
     {
         time: "09:00",
-        mon: "Erik Aspeland",
+        mon: userData[0],
         tue: "",
-        wed: "Big dawg Bernt",
+        wed: userData[1],
         thu: "",
         fri: "Sminky Black",
         sat: "",
@@ -11,11 +13,11 @@ export const hours = [
     },
     {
         time: "10:00",
-        mon: "Smeffy Smool",
+        mon: userData[3],
         tue: "",
         wed: "",
         thu: "",
-        fri: "Smidig Smurt",
+        fri: userData[4],
         sat: "",
         sun: ""
     },
@@ -31,11 +33,11 @@ export const hours = [
     },
     {
         time: "12:00",
-        mon: "Bob Jones",
+        mon: userData[5],
         tue: "",
         wed: "",
-        thu: "Jones Bobby",
-        fri: "Jim Nongi",
+        thu: userData[6],
+        fri: userData[7],
         sat: "",
         sun: ""
     },

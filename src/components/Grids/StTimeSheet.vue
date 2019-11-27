@@ -19,13 +19,35 @@
             <div class="tableBody">
                 <div class="hourRow" v-for="hour in this.hours">
                     <td class="hourData">{{ hour.time }}</td>
-                    <td class="dayData">{{ hour.mon }}</td>
-                    <td class="dayData">{{ hour.tue }}</td>
-                    <td class="dayData">{{ hour.wed }}</td>
-                    <td class="dayData">{{ hour.thu }}</td>
-                    <td class="dayData">{{ hour.fri }}</td>
-                    <td class="dayData">{{ hour.sat }}</td>
-                    <td class="dayData">{{ hour.sun }}</td>
+                    <td class="dayData" @click="displayModal(hour.mon)">{{ hour.mon.name }}</td>
+                    <td class="dayData" @click="displayModal(hour.tue)">{{ hour.tue.name }}</td>
+                    <td class="dayData" @click="displayModal(hour.wed)">{{ hour.wed.name}}</td>
+                    <td class="dayData" @click="displayModal(hour.thu)">{{ hour.thu.name }}</td>
+                    <td class="dayData" @click="displayModal(hour.fri)">{{ hour.fri.name }}</td>
+                    <td class="dayData" @click="displayModal(hour.sat)">{{ hour.sat.name }}</td>
+                    <td class="dayData" @click="displayModal(hour.sun)">{{ hour.sun.name }}</td>
+                </div>
+            </div>
+        </div>
+        <div v-if="showModal" class="modal">
+            <img
+                    src="../../../public/icon/xIcon.svg"
+                    @click="showModal = false"
+                    id="closeBtn"
+            />
+            <div class="modalInfoContainer">
+                <div class="modalUserInfo">
+                    <h4>{{this.user.name}}</h4>
+                    <p>{{this.user.phoneNumber}}</p>
+                    <p>{{this.user.email}}</p>
+                </div>
+                <div class="modalNote">
+                    <h4>Notat</h4>
+                    <p>{{this.user.notes}}</p>
+                </div>
+                <div class="modalUserNote">
+                    <h5>Melding fra kunde</h5>
+                    <p>{{this.user.booking[0].note}}</p>
                 </div>
             </div>
         </div>
@@ -36,14 +58,71 @@
 
     export default {
         name: "st-timesheet",
+        methods: {
+            alert(message) {
+                alert(message)
+            },
+            displayModal(user) {
+                this.showModal = true;
+                this.user = user;
+            }
+        },
         data() {
             return {
-                hours: hours
+                hours: hours,
+                showModal: false,
+                user: {}
             };
         }
     }
 </script>
 <style scoped>
+    .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 380px;
+        width: 370px;
+        background-color: #FCFCFC;
+        margin: 0;
+        border: 1px solid;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .modalInfoContainer {
+        top: 0;
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+     h5, h4, p {
+        text-align: left;
+    }
+
+    .modalUserInfo {}
+
+    .modalNote {
+        border-top: 1px solid;
+        border-bottom: 1px  solid;
+    }
+
+    .modalUserNote {}
+
+    #closeBtn {
+        position: absolute;
+        right: 0;
+        margin: 10px;
+        background-color: black;
+        padding: 5px;
+        border-radius: 50%;
+    }
+
     .timeSheetContainer {
         border-radius: 15px;
         width: 90%;
@@ -120,6 +199,7 @@
     .dayData {
         border: 1px solid;
         border-radius: 10px;
+        transition: all 0.5s ease;
     }
 
     th,
@@ -135,5 +215,10 @@
     .imgContainer > img {
         width: 100%;
         height: 100%;
+    }
+
+    .dayData:hover {
+        background-color: rgba(93,87,66,0.4);
+        cursor: pointer;
     }
 </style>
