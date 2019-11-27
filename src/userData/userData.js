@@ -20,7 +20,7 @@ const userData = [
       },
       {
         treatment: "Akupunktur",
-        date: "13.11.2019",
+        date: "03.12.2019",
         time: "10.30",
         address: "Prinsens gate 9",
         note: ""
@@ -39,6 +39,13 @@ const userData = [
         time: "10.30",
         address: "Waldemar Thranes gate 66",
         note: "This is a note from the costumer..:)"
+      },
+      {
+        treatment: "Akupunktur",
+        date: "02.12.2019",
+        time: "10.30",
+        address: "Waldemar Thranes gate 66",
+        note: "This is a note from the costumer..:)"
       }
     ],
     notes: "This is a general note from the doctor..:)"
@@ -51,6 +58,13 @@ const userData = [
       {
         treatment: "Akupunktur",
         date: "04.10.2019",
+        time: "10.30",
+        address: "Waldemar Thranes gate 66",
+        note: "This is a note from the costumer..:)"
+      },
+      {
+        treatment: "Akupunktur",
+        date: "03.12.2019",
         time: "10.30",
         address: "Waldemar Thranes gate 66",
         note: "This is a note from the costumer..:)"
@@ -69,6 +83,13 @@ const userData = [
         time: "10.30",
         address: "Waldemar Thranes gate 66",
         note: "This is a note from the costumer"
+      },
+      {
+        treatment: "Akupunktur",
+        date: "04.12.2019",
+        time: "10.30",
+        address: "Waldemar Thranes gate 66",
+        note: "This is a note from the costumer..:)"
       }
     ],
     notes: "This is a general note from the doctor..:)"
@@ -84,6 +105,13 @@ const userData = [
         time: "10.30",
         address: "Waldemar Thranes gate 66",
         note: "This is a note from the costumer"
+      },
+      {
+        treatment: "Akupunktur",
+        date: "06.12.2019",
+        time: "10.30",
+        address: "Waldemar Thranes gate 66",
+        note: "This is a note from the costumer..:)"
       }
     ],
     notes: "This is a general note from the doctor..:)"
@@ -99,6 +127,13 @@ const userData = [
         time: "10.30",
         address: "Waldemar Thranes gate 66",
         note: "This is a note from the costumer"
+      },
+      {
+        treatment: "Akupunktur",
+        date: "07.12.2019",
+        time: "10.30",
+        address: "Waldemar Thranes gate 66",
+        note: "This is a note from the costumer..:)"
       }
     ],
     notes: "This is a general note from the doctor..:)"
@@ -114,6 +149,13 @@ const userData = [
         time: "10.30",
         address: "Waldemar Thranes gate 66",
         note: "This is a note from the costumer"
+      },
+      {
+        treatment: "Akupunktur",
+        date: "02.12.2019",
+        time: "10.30",
+        address: "Waldemar Thranes gate 66",
+        note: "This is a note from the costumer..:)"
       }
     ],
     notes: "This is a general note from the doctor..:)"
@@ -129,6 +171,13 @@ const userData = [
         time: "10.30",
         address: "Waldemar Thranes gate 66",
         note: "This is a note from the costumer"
+      },
+      {
+        treatment: "Akupunktur",
+        date: "08.12.2019",
+        time: "10.30",
+        address: "Waldemar Thranes gate 66",
+        note: "This is a note from the costumer..:)"
       }
     ],
     notes: "This is a general note from the doctor..:)"
