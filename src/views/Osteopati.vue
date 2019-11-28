@@ -26,7 +26,7 @@
       fortelle hva du kan forvente og hva du selv må ta ansvar for.
     </p>
     <div class="imgContainer">
-      <img src="../../public/img/2Osteopati.svg" alt="" />
+      <img src="../../public/img/OsteopatiInfoBox.png" alt="" />
     </div>
     <p>
       Førstegangs konsultasjon 90min / Oppfølgende konsultasjon 45min
@@ -109,7 +109,7 @@ li > span {
 .imgContainer {
   max-width: 400px;
   max-height: 400px;
-  width: 75vw;
+  width: 85vw;
   height: 75vw;
   margin-bottom: 20px;
 }
