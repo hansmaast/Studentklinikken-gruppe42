@@ -26,7 +26,7 @@
     </p>
 
     <div class="imgContainer">
-      <img src="../../public/img/2Akupunktur.svg" alt="" />
+      <img src="../../public/img/AkupunkturInfoBox.png" alt="" />
     </div>
     <p>Førstegangs konsultasjon 90min / Oppfølgende konsultasjon 45min</p>
     <router-link to="booking">
@@ -116,7 +116,7 @@ li > span {
 .imgContainer {
   max-width: 400px;
   max-height: 400px;
-  width: 75vw;
+  width: 85vw;
   height: 75vw;
   margin-bottom: 20px;
 }
