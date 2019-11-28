@@ -6,21 +6,21 @@ const userData = [
     booking: [
       {
         treatment: "Akupunktur",
-        date: "04.10.2019",
+        date: "04.12.2019",
         time: "10.30",
         address: "Prinsens gate 9",
         note: "This is a note from the costumer..:)"
       },
       {
         treatment: "Osteopati",
-        date: "04.11.2019",
+        date: "03.12.2019",
         time: "12.00",
         address: "Prinsens gate 9",
         note: "This is a note from the costumer..:)"
       },
       {
         treatment: "Akupunktur",
-        date: "03.12.2019",
+        date: "06.12.2019",
         time: "10.30",
         address: "Prinsens gate 9",
         note: ""
