@@ -1,31 +1,23 @@
 # Studentklinikken
 
-Eksamensoppgave for faget grensesnittgesign..
+Dette er repository for eksamen i grensesnittdesign. 
+Her får du en kort beskrivelse av hvordan du kan teste løsningn vår lokalt på din maskin. 
+Du kan også sjekke ut vår løsning via denne linken:
+**Link**
 
 ## Project setup
+
+Sørg for at du har Node.js installer på din datamaskin.
+
+Kjør følgende kommando for å installere dependencies:
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+Kjør følgende kommando for å starte opp en lokal server:
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Trykk så på linken ```http://localhost:....```
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

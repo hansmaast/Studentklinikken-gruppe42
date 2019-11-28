@@ -1,4 +1,3 @@
-// This contains the components html && child components
 <template>
   <div>
     <router-view @log-in="logIn" class="routerView" />
@@ -13,10 +12,8 @@ export default {
   name: "userview",
   components: {
     StNavBar
-    // Always declare the component you want to render
   },
   data() {
-    // This is kind of the same as props? Hmm... Its sort of like a variable you can send to the components props?
     return {
       loggedIn: false
     };
@@ -33,6 +30,7 @@ export default {
 <style scoped>
 .routerView {
   margin-bottom: 60px;
+  transition: all 0.5s ease-out;
 }
 @media (min-width: 770px) {
   #navBar {
