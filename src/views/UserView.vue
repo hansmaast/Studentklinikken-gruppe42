@@ -30,7 +30,6 @@ export default {
 <style scoped>
 .routerView {
   margin-bottom: 60px;
-  transition: all 0.5s ease-out;
 }
 @media (min-width: 770px) {
   #navBar {
