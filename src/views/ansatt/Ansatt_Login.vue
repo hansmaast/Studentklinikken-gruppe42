@@ -1,6 +1,6 @@
 <template>
   <div class="mainContainer">
-    <st-ansatt-login />
+    <st-ansatt-login @log-in="logIn"/>
   </div>
 </template>
 
@@ -10,6 +10,12 @@ import StAnsattLogin from "../../components/Forms/StAnsattLogin";
 export default {
   name: "Login",
   components: { StAnsattLogin },
+  methods: {
+    logIn() {
+      this.$emit('log-in');
+      console.log("component");
+    }
+  },
   data() {
     return {};
   }

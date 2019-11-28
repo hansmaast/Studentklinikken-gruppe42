@@ -1,7 +1,7 @@
 <template>
   <div class="viewContainer">
     <st-ansatt-nav v-if="loggedIn"/>
-    <router-view class="routerView" />
+    <router-view @log-in="logIn" class="routerView" />
   </div>
 </template>
 
@@ -17,10 +17,13 @@ export default {
   data() {
     // This is kind of the same as props? Hmm... Its sort of like a variable you can send to the components props?
     return {
-      loggedIn: true
+      loggedIn: false
     };
   },
   methods: {
+    logIn() {
+      this.loggedIn = true
+    }
   }
 };
 </script>

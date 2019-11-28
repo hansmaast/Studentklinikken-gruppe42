@@ -1,7 +1,7 @@
 <template>
   <div class="mainContainer">
     <div class="contentContainer">
-      <h1>God morgen, Kari!</h1>
+      <h1>God {{this.timeOfDay}}, Kari!</h1>
       <div class="infoCardContainer">
         <st-notification-card />
         <st-whos-working-card />
@@ -20,7 +20,30 @@ export default {
   name: "Login",
   components: { StNotificationCard, StWhosWorkingCard, StMessageCard },
   data() {
-    return {};
+    return {
+      timeOfDay: this.getTimeOfDay()
+    };
+  },
+  methods: {
+    getTimeOfDay() {
+      let time = new Date().getHours();
+      console.log(time, typeof(time));
+      if (time >= 6 && time < 9) {
+        return "morgen";
+      }
+      if (time >= 9  && time < 12) {
+        return "formiddag";
+      }
+      if (time >= 12  && time < 18) {
+        return "ettermiddag";
+      }
+      if (time >= 18  && time <= 23) {
+        return "kveld";
+      }
+      if (time >= 0  && time < 6) {
+        return "natt";
+      }
+    }
   }
 };
 </script>

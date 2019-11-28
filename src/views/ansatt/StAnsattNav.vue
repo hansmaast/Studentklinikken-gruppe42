@@ -14,9 +14,9 @@
       <img src="../../../public/icon/ansatt/costumerAnsatt.svg" alt="" />
       <h5>Kunder</h5>
     </router-link>
-    <router-link class="navLink" to="timeliste">
+    <router-link class="navLink" to="home">
       <img src="../../../public/icon/ansatt/mailAnsatt.svg" alt="" />
-      <h5>Email</h5>
+      <h5>Hjem</h5>
     </router-link>
     <router-link class="navLink" to="ansattoversikt">
       <img src="../../../public/icon/ansatt/userAnsatt.svg" alt="" />
