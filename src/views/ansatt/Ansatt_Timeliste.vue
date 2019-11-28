@@ -1,6 +1,5 @@
 <template>
   <div class="mainContainer">
-    <h1>Timesheet</h1>
     <st-time-sheet />
   </div>
 </template>
@@ -22,6 +21,8 @@
 
 .mainContainer {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imgContainer > img {

@@ -3,7 +3,7 @@
     <h1>Bookinger</h1>
     <p>
       {{ this.user[0].name }}, <br />
-      Her er dinne kommende timer👋
+      Her er dine kommende timer👋
     </p>
     <div class="bookingCard" v-for="b in this.user[0].booking">
       <p class="head">{{ b.treatment }}</p>
@@ -18,7 +18,7 @@
         venterom ligger i 3. etg. i samme bygg. Vi har heis.
       </p>
       <st-medium-btn
-        @click.native="displayModal = true"
+        @click.native="displayModal = true, getBooking(b)"
         class="avbestill"
         label="Avbestill"
       />
@@ -34,8 +34,8 @@
           Er du sikker på at du vil <br />
           avbestille timen din?
         </p>
-        <h4>12. juli 2019 kl 15.00</h4>
-        <st-medium-btn class="modalBtn" label="Bekreft avbestilling" />
+        <h4>{{this.booking.date}} kl {{this.booking.time}}</h4>
+        <st-medium-btn @click.native="deleteBooking" class="modalBtn" label="Bekreft avbestilling" />
         <p @click="displayModal = false">Avbryt</p>
       </div>
     </div>
@@ -73,13 +73,24 @@ export default {
         "17.00",
         "18.00"
       ],
-      user: userData
+      user: userData,
+      booking: {}
     };
   },
   methods: {
     // This is the components method functions, it is basically functions inside an object
-    alert(msg) {
-      alert(msg); // Using "this" to refer to the components own properties?
+    getBooking(booking) {
+      this.booking = booking;
+    },
+    deleteBooking() {
+      for (let i = 0; i < this.user[0].booking.length; i++) {
+          if (this.user[0].booking[i] == this.booking) {
+            this.user[0].booking.splice(i, 1);
+            console.log('Delete index ' + i);
+          }
+        this.displayModal = false;
+      }
+
     }
   }
 };
@@ -138,6 +149,7 @@ export default {
 
 .bookingCard > p {
   font-size: 14px;
+  text-align: left;
 }
 
 .head {
@@ -169,14 +181,10 @@ export default {
   grid-area: f;
 }
 
-.info {
-  grid-area: info;
-  color: #636a7d;
-}
-
 .avbestill {
   grid-area: foot;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .calendar {
@@ -215,5 +223,13 @@ p {
   font-size: 18px;
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+.info {
+  grid-area: info;
+  color: #636a7d;
+  text-align: center !important;
+  border-top: 1px #3333 solid;
+  padding-top: 10px;
 }
 </style>

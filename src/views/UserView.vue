@@ -1,8 +1,8 @@
 // This contains the components html && child components
 <template>
   <div>
-    <router-view class="routerView" />
-    <st-nav-bar />
+    <router-view @log-in="logIn" class="routerView" />
+    <st-nav-bar v-if="loggedIn" />
   </div>
 </template>
 
@@ -17,9 +17,16 @@ export default {
   },
   data() {
     // This is kind of the same as props? Hmm... Its sort of like a variable you can send to the components props?
-    return {};
+    return {
+      loggedIn: false
+    };
   },
-  methods: {}
+  methods: {
+    logIn() {
+      this.loggedIn = true;
+      console.log('view');
+    }
+  }
 };
 </script>
 

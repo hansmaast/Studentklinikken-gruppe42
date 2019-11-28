@@ -1,6 +1,6 @@
 <template>
   <div class="mainContainer">
-    <st-login />
+    <st-login @log-in="sendMethod"/>
   </div>
 </template>
 
@@ -12,6 +12,12 @@ export default {
   components: { StLogin },
   data() {
     return {};
+  },
+  methods: {
+    sendMethod() {
+     this.$emit('log-in');
+      console.log('component');
+    }
   }
 };
 </script>

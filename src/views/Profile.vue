@@ -4,7 +4,7 @@
     <div class="imgContainer">
       <img src="../../public/icon/accountIcon.svg" alt="">
     </div>
-    <h4>NAVN</h4>
+    <h4>{{this.user[0].name}}</h4>
     <div class="treatments">
       <st-input-email placeholder="elisabeth@gmail.com"/>
       <st-input-phone placeholder="8372837"/>

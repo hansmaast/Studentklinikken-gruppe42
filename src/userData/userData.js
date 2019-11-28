@@ -14,9 +14,9 @@ const userData = [
       {
         treatment: "Osteopati",
         date: "04.11.2019",
-        time: "10.30",
+        time: "12.00",
         address: "Prinsens gate 9",
-        note: ""
+        note: "This is a note from the costumer..:)"
       },
       {
         treatment: "Akupunktur",

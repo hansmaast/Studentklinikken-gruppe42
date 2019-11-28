@@ -24,9 +24,11 @@
     <date-picker class="calendar" v-model="date" color="teal" is-inline />
     <h4>Velg klokkeslett:</h4>
     <div id="hourPicker">
-      <!--        <st-hour-picker id ="hourPicker" :hours="hours" :appointment="appointment"/>-->
       <div class="timeContainer">
-        <div @click="selectTime" v-for="hour in hours" class="timeBox">
+        <div v-if="(hour != '10:00')" @click="selectTime" v-for="hour in hours" class="timeBox">
+          {{ hour }}
+        </div>
+        <div v-else class="timeBox bookedHour">
           {{ hour }}
         </div>
       </div>
@@ -210,6 +212,10 @@ textarea::placeholder {
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease;
+}
+
+.bookedHour {
+  color: #9d9d9d;
 }
 
 .active {

@@ -1,6 +1,6 @@
 <template>
   <div class="mainContainer">
-    <st-register /></div
+    <st-register @log-in="sendMethod" /></div
 ></template>
 
 <script>
@@ -8,6 +8,12 @@ import StRegister from "../components/Forms/StRegister";
 export default {
   name: "Register",
   components: { StRegister },
+  methods: {
+    sendMethod() {
+      this.$emit('log-in');
+      console.log('component');
+    }
+  },
   data() {
     return {};
   }

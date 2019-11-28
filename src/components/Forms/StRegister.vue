@@ -28,7 +28,7 @@
         <p>Allerede bruker?</p>
       </router-link>
       <router-link to="home">
-        <st-small-btn label="FULLFØR" />
+        <st-small-btn @click.native="logIn" label="FULLFØR" />
       </router-link>
     </div>
   </div>
@@ -41,7 +41,13 @@ import StSmallBtn from "../Buttons/StSmallBtn";
 
 export default {
   name: "st-register",
-  components: { StInputPassword, StInputEmail, StInputUser, StSmallBtn }
+  components: { StInputPassword, StInputEmail, StInputUser, StSmallBtn },
+  methods: {
+    logIn() {
+      this.$emit('log-in');
+      console.log('btn');
+    }
+  }
 };
 </script>
 <style scoped>

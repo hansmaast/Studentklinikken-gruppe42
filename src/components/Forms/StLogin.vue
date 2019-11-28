@@ -16,7 +16,7 @@
     <div class="loginFoot">
       <p>Glemt passord?</p>
       <router-link to="home">
-        <st-small-btn label="LOGG INN" />
+        <st-small-btn @click.native="logIn" label="LOGG INN" />
       </router-link>
     </div>
   </div>
@@ -28,7 +28,13 @@ import StSmallBtn from "../Buttons/StSmallBtn";
 
 export default {
   name: "st-login",
-  components: { StInputPassword, StInputEmail, StSmallBtn }
+  components: { StInputPassword, StInputEmail, StSmallBtn },
+  methods: {
+    logIn() {
+      this.$emit('log-in');
+      console.log('btn');
+    }
+  }
 };
 </script>
 <style scoped>

@@ -1,9 +1,9 @@
 <template>
     <div class="timeSheetContainer">
         <header>
-            <div class="left">Left</div>
-            <div class="center">Display Date</div>
-            <div class="right">Right</div>
+            <div class="left">Uke nr</div>
+            <div class="center">{{new Date().toLocaleDateString()}}</div>
+            <div class="right">Dag</div>
         </header>
         <div class="tableContainer">
             <div class="tableHead">
@@ -197,9 +197,12 @@
     }
 
     .dayData {
-        border: 1px solid;
-        border-radius: 10px;
-        transition: all 0.5s ease;
+        /*border: 1px solid;*/
+        transition:  0.2s ease;
+    }
+
+    .hourRow:nth-child(even) {
+        background-color: aliceblue;
     }
 
     th,
@@ -218,7 +221,6 @@
     }
 
     .dayData:hover {
-        background-color: rgba(93,87,66,0.4);
         cursor: pointer;
     }
 </style>
