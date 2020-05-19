@@ -11,7 +11,7 @@ full funksjonalitet, men du kan lese om de forskjellige behandlingstilbudene og 
 Du kan også sjekke ut vår løsning for brukerer via denne linken:  
 #### https://studentklinikken.surge.sh/
 
-or å komme inn på vår ansattside for desktop er du nødt til å gjøre dette lokalt.
+For å komme inn på vår ansattside for desktop er du nødt til å gjøre dette lokalt.
 Følg veiledingen under, og skriv inn ```http://localhost:xxxx/ansatt``` i adressefeltet på nettleseren din.
 
 ## Oppsett
