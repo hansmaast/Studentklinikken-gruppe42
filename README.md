@@ -2,7 +2,7 @@
 
 Dette er repository for eksamen i grensesnittdesign. 
 
-I dette dokumentet får du en kort beskrivelse av hvordan du kan teste løsningn vår lokalt på din maskin. 
+I dette dokumentet får du en kort beskrivelse av hvordan du kan teste løsninen vår lokalt på din maskin. 
 
 For å komme inn som en testbruker klikker du på logg inn. Her trenger du ikke noe brukernavn eller passord, 
 i og med at dette kun er en klikkbar prototype. Trykker du på "fortsett uten bruker" får du ikke tilgang til
